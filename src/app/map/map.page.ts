@@ -1,19 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-map',
-//   templateUrl: './map.page.html',
-//   styleUrls: ['./map.page.scss'],
-// })
-// export class MapPage implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
 import { Component, OnInit } from '@angular/core';
 import {
   ToastController,
@@ -47,9 +31,7 @@ export class MapPage implements OnInit {
   async ngOnInit() {
     // Since ngOnInit() is executed before `deviceready` event,
     // you have to wait the event.
-    console.log("testing");
     await this.platform.ready();
-    console.log("platform is ready");
     await this.loadMap();
   }
 
@@ -88,7 +70,7 @@ export class MapPage implements OnInit {
       });
 
       // add a marker
-      let marker: Marker = this.map.addMarkerSync({
+      const marker: Marker = this.map.addMarkerSync({
         title: '@ionic-native/google-maps plugin!',
         snippet: 'This plugin is awesome!',
         position: location.latLng,
@@ -110,7 +92,7 @@ export class MapPage implements OnInit {
   }
 
   async showToast(message: string) {
-    let toast = await this.toastCtrl.create({
+    const toast = await this.toastCtrl.create({
       message: message,
       duration: 2000,
       position: 'middle'
