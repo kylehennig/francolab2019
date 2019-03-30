@@ -44,9 +44,37 @@ export class MapPage implements OnInit {
         },
         zoom: 18,
         tilt: 30
-      }
+      },
+      styles: [
+        {
+          'featureType': 'poi',
+          'elementType': 'all',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'poi.park',
+          'elementType': 'all',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'transit.station',
+          'elementType': 'all',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        }
+      ]
     });
-
   }
 
   async onButtonClick() {
