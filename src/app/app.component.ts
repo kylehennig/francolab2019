@@ -12,19 +12,9 @@ import { Environment } from '@ionic-native/google-maps/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
-      url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
-    {
       title: 'Map',
       url: '/map',
-      icon: ''
+      icon: 'map'
     }
   ];
 
