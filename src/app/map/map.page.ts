@@ -39,10 +39,10 @@ export class MapPage implements OnInit {
     this.map = GoogleMaps.create('map_canvas', {
       camera: {
         target: {
-          lat: 43.0741704,
-          lng: -89.3809802
+          lat: 53.5444,
+          lng: -113.4909
         },
-        zoom: 18,
+        zoom: 11,
         tilt: 30
       },
       styles: [
@@ -76,6 +76,7 @@ export class MapPage implements OnInit {
       ]
     });
   }
+
 
   async onButtonClick() {
     this.map.clear();
