@@ -1360,6 +1360,10 @@ export class ServerService {
     {
       'id': 46,
       'description': 'Échantillons gratuits de notre nouvelle bière. Étudiants encourager!',
+    },
+    {
+       'id': 32,
+       'description': 'Achete 1h de traduction et revecois 30 minutes gratuit!'
     }
   ];
 

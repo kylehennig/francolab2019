@@ -247,11 +247,17 @@ export class MapPage implements OnInit {
 
   async dispMarkerData(id: number) {
     const company = this.server.companies[id];
-    let info = company.address + ', ' + company.city + ', ' + company.region + '<br>'
-                + company.phone + '<br>'
-                +company.email + '<br>';
+    let info = '<h4>' + company.address + ', ' + company.city + ', ' + company.region + '<br>'
+                + '</h4>'
+
+    if (company.phone !== '') {
+      info += '<h4>' + company.phone + '</h4>';
+    }
+    if (company.email !== '') {
+      info += '<h4>' + company.email + '</h4>';
+    }
     if (this.server.onSale(id)) {
-      info += this.server.getSale(id).description;
+      info += '<h4>' + this.server.getSale(id).description + '</h4>';
     }
     if (this.server.onSale(id)) {
       return this.map.addMarker({
@@ -260,7 +266,7 @@ export class MapPage implements OnInit {
           'lng': company.lng
         },
         'icon': 'https://i.imgur.com/7wnV1Ap.png',
-        'title': company.company,
+        'title': '<h3>' + company.company + '</h3>',
         'snippet': info,
       });
     } else {
@@ -269,7 +275,7 @@ export class MapPage implements OnInit {
           'lat': company.lat,
           'lng': company.lng
         },
-        'title': company.company,
+        'title': '<h3>' + company.company + '</h3>',
         'snippet': info,
       });
     }
