@@ -8,4 +8,5 @@ export class Company {
     category: string;
     phone: string;
     email: string;
+    id: number;
 }
