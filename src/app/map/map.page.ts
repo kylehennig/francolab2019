@@ -92,7 +92,6 @@ export class MapPage implements OnInit {
 
   async onButtonClick() {
     this.map.clear();
-    console.log(this.server.companies[1].company);
 
     this.loading = await this.loadingCtrl.create({
       message: 'Please wait...'
@@ -176,7 +175,7 @@ export class MapPage implements OnInit {
   }
 
   async dispMarker(id: number) {
-    const company = this.server.companies[id];
+    const company = this.server.getCompany(id);
     const options: GeocoderRequest = {
       address: company.address + ' ' + company.city + ' ' + company.region
     };

@@ -1347,15 +1347,9 @@ export class ServerService {
       'lng': -113.490927
     }
   ];
-  private idCompanyMap = new Map();
   private categoryCompanyMap = new Map();
 
   constructor() {
-    // Creates idCompanyMap.
-    this.companies.forEach(company => {
-      this.idCompanyMap.set(company.id, company);
-    });
-
     // Creates categoryCompanyMap.
     this.companies.forEach(company => {
       this.categoryCompanyMap.set(company.category, []);
@@ -1370,7 +1364,7 @@ export class ServerService {
    * @param id The id.
    */
   getCompany(id: number) {
-    return this.idCompanyMap.get(id);
+    return this.companies[id];
   }
 
   /**
