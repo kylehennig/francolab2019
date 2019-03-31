@@ -79,7 +79,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
-      'category': 'Services formatique',
+      'category': 'Services',
       'phone': '780-800-8712',
       'email': ''
     },
@@ -90,7 +90,7 @@ export class ServerService {
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2P 5L3',
-      'category': 'Avocats',
+      'category': 'Avocat',
       'phone': '403-509-7500',
       'email': 'jean-p.couture@pwc.com'
     },
@@ -101,7 +101,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 0Z2',
-      'category': 'Services financers',
+      'category': 'Services',
       'phone': '780-468-1667',
       'email': 'simon@bergeron-cga.com'
     },
@@ -123,7 +123,7 @@ export class ServerService {
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2K 2H5',
-      'category': 'Confection de mur vegétaux/Art/ Décoration',
+      'category': 'Art',
       'phone': '403-861-3732',
       'email': 'nathalie@verticaloxygen.com'
     },
@@ -134,7 +134,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
-      'category': 'Organisme Juridique',
+      'category': 'Organisme',
       'phone': '780-450-2443',
       'email': 'bureau@ajefa.ca'
     },
@@ -145,7 +145,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6R 0E9',
-      'category': 'Construction/ confection de béton',
+      'category': 'Construction',
       'phone': '780-932-9317',
       'email': 'gitasaconcreteltd@gmail.com'
     },
@@ -233,7 +233,7 @@ export class ServerService {
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2G 0L8',
-      'category': 'Art et musique',
+      'category': 'Art',
       'phone': '403-543-5123',
       'email': 'julijana.capone@nmc.ca'
     },
@@ -288,7 +288,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5H 0W2',
-      'category': 'Services financiers',
+      'category': 'Services',
       'phone': '587-920-8226',
       'email': 'sunuas2016@gmail.com'
     },
@@ -310,7 +310,7 @@ export class ServerService {
       'city': 'Vermilion',
       'region': 'Alberta',
       'postal': 'T0B 2W0',
-      'category': 'Artisant',
+      'category': 'Art',
       'phone': '306-914-0327',
       'email': 'theoldschoolcheesery@gmail.com'
     },
@@ -453,7 +453,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5J 0H3',
-      'category': 'Services financiers',
+      'category': 'Services',
       'phone': '780-412-6614',
       'email': 'bruno.mercier@nbf.ca'
     },
@@ -541,7 +541,7 @@ export class ServerService {
       'city': 'Wembley',
       'region': 'Alberta',
       'postal': 'T0H 3S0',
-      'category': 'Musée/Art',
+      'category': 'Art',
       'phone': '587-771-0662',
       'email': 'blow@dinomuseum.ca'
     },
@@ -574,7 +574,7 @@ export class ServerService {
       'city': 'Canmore',
       'region': 'Alberta',
       'postal': 'T1W 0G7',
-      'category': 'Centre d\'emploi',
+      'category': 'unicipalité',
       'phone': '403-678-6630',
       'email': 'naomi@jobresourcecentre.com'
     },
@@ -596,7 +596,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 1Z4',
-      'category': 'Galerie d\'art',
+      'category': 'Art',
       'phone': '780-461-3427',
       'email': 'direction@galeriecava.com'
     },
@@ -684,7 +684,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
-      'category': 'Centre d\'emploi',
+      'category': 'Municipalité',
       'phone': '780-826-9003',
       'email': 'nathalie.beauregard@accesemploi.net'
     },
@@ -717,7 +717,7 @@ export class ServerService {
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2P 1H2',
-      'category': 'Hôtellerie',
+      'category': 'Hotel',
       'phone': '403-218-3038',
       'email': 'cdesmarteau@ramadacalgary.com'
     },
@@ -805,7 +805,7 @@ export class ServerService {
       'city': 'Banff',
       'region': 'Alberta',
       'postal': 'T1L 1H5',
-      'category': 'Hôtellerie',
+      'category': 'Hotel',
       'phone': '403-431-0315',
       'email': 'MarieHelene_Dagenais@banffcentre.ca'
     },
@@ -860,7 +860,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5K 2M2',
-      'category': 'Hebergement',
+      'category': 'Hotel',
       'phone': '780-9453274',
       'email': 'info@msjst.ca'
     },
@@ -904,7 +904,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5T 4P4',
-      'category': 'Import/Export',
+      'category': 'Services',
       'phone': '438-868-5222',
       'email': 'jeanmariekonan@hotmail.com'
     },
@@ -1135,7 +1135,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3V7',
-      'category': 'Alimentaire',
+      'category': 'Restauration',
       'phone': '',
       'email': 'daniel.lachance@live.com'
     }
