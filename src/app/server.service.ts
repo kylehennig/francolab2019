@@ -258,7 +258,7 @@ export class ServerService {
       'company': 'Rocky Mountain Ski Lodge',
       'contact': 'Donna Trautman',
       'address': '1711 Bow Valley Trail',
-      'city': 'Canmore/les Rocheuses',
+      'city': 'Canmore',
       'region': 'Alberta',
       'postal': 'T1W 1L7',
       'category': 'Tourisme',
@@ -1350,12 +1350,16 @@ export class ServerService {
   ];
   sales: Sale[] = [
     {
-      'id': 0,
-      'description': 'Si tu viens acheter des chausures, on peut te donner une autre gratuit.'
+      'id': 5,
+      'description': 'Un chocolat gratuit de Café Bicyclette pour tous ceux qui montrent ce message!',
     },
     {
-      'id': 1,
-      'description': '15 pourcent de soldes sur tout les chocolats!!!'
+      'id': 19,
+      'description': 'Solde de fin de saison, 15% de réduction sur tout',
+    },
+    {
+      'id': 46,
+      'description': 'Échantillons gratuits de notre nouvelle bière. Étudiants encourager!',
     }
   ];
 
