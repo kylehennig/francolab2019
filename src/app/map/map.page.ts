@@ -117,23 +117,6 @@ export class MapPage implements OnInit {
     this.map = GoogleMaps.create('map_canvas', this.options);
   }
 
-  async blueDot() {
-    // Get the location of you
-    this.map.getMyLocation().then((location: MyLocation) => {
-      this.loading.dismiss();
-
-      // add a marker
-      const marker: Marker = this.map.addMarkerSync({
-        position: location.latLng,
-        // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-        // icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
-        'icon': '../../assets/saleMarker.png',
-      });
-    })
-      .catch(err => {
-        this.loading.dismiss();
-      });
-  }
 
   async dispAllMark() {
     this.loading = await this.loadingCtrl.create({
@@ -184,7 +167,6 @@ export class MapPage implements OnInit {
     // })
     // .catch(err => {
     this.loading.dismiss();
-    this.blueDot();
     //   this.showToast(err.error_message);
     // });
   }
@@ -254,17 +236,12 @@ export class MapPage implements OnInit {
 
   async dispMarkerData(id: number) {
     const company = this.server.companies[id];
-    let info = '<h4>' + company.address + ', ' + company.city + ', ' + company.region + '<br>'
-                + '</h4>'
-
-    if (company.phone !== '') {
-      info += '<h4>' + company.phone + '</h4>';
-    }
-    if (company.email !== '') {
-      info += '<h4>' + company.email + '</h4>';
-    }
+    let info = '';
     if (this.server.onSale(id)) {
-      info += '<h4>' + this.server.getSale(id).description + '</h4>';
+      info += this.server.getSale(id).description;
+    }
+    else {
+      info += company.address + ', ' + company.city + ', ' + company.region;
     }
     if (this.server.onSale(id)) {
       return this.map.addMarker({
@@ -273,7 +250,7 @@ export class MapPage implements OnInit {
           'lng': company.lng
         },
         'icon': 'https://i.imgur.com/7wnV1Ap.png',
-        'title': '<h3>' + company.company + '</h3>',
+        'title': company.company,
         'snippet': info,
       });
     } else {
@@ -282,7 +259,7 @@ export class MapPage implements OnInit {
           'lat': company.lat,
           'lng': company.lng
         },
-        'title': '<h3>' + company.company + '</h3>',
+        'title': company.company,
         'snippet': info,
       });
     }
@@ -299,7 +276,5 @@ export class MapPage implements OnInit {
     });
   }
 
-  // async getCurrentLocation(): Promise<LatLng> {
-  //   return this.map.getMyLocation().then(location => location.latLng);
-  // }
+
 }
