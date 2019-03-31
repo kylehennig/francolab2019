@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'sales',
     loadChildren: './sales/sales.module#SalesPageModule'
   },
+  {
+    path: 'settings',
+    loadChildren: './settings/settings.module#SettingsPageModule'
+  },
 ];
 
 @NgModule({
