@@ -190,6 +190,7 @@ export class MapPage implements OnInit {
 
     if (this.searchText === '') {
       // No search.
+      this.searchResults = [];
       this.searching = false;
       return;
     }
@@ -210,6 +211,14 @@ export class MapPage implements OnInit {
     // Suggests results.
     this.searchResults = matches;
     this.searching = true;
+  }
+
+  async searchFocus() {
+    this.searching = true;
+  }
+
+  async searchUnfocus() {
+    this.searching = false;
   }
 
   async dispMarkerApi(id: number) {
