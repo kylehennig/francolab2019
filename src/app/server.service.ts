@@ -244,7 +244,7 @@ export class ServerService {
       'city': 'Spruce Grove',
       'region': 'Alberta',
       'postal': 'T7X 2Z6',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '780-948-0374',
       'email': 'france@dghe.ca',
       'id': 21
@@ -332,7 +332,7 @@ export class ServerService {
       'city': 'St Peace River',
       'region': 'Alberta',
       'postal': 'T8S0B4',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '416-451-6688',
       'email': 'contact@toutdanslatete.com',
       'id': 29
@@ -354,7 +354,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 0Z2',
-      'category': 'Organsime',
+      'category': 'Organisme',
       'phone': '587-524-9399',
       'email': 'info@frenchquarteredmonton.ca',
       'id': 31
@@ -431,7 +431,7 @@ export class ServerService {
       'city': 'Airdrie',
       'region': 'Alberta',
       'postal': 'T4A 2K7',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '403-390-9577',
       'email': 'fgiroux@shaw.ca',
       'id': 38
@@ -442,7 +442,7 @@ export class ServerService {
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T3C 3X',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '587-586-8058',
       'email': 'contact@candbc.net',
       'id': 39
@@ -574,7 +574,7 @@ export class ServerService {
       'city': 'Canmore',
       'region': 'Alberta',
       'postal': 'T1W 0G7',
-      'category': 'unicipalité',
+      'category': 'Municipalité',
       'phone': '403-678-6630',
       'email': 'naomi@jobresourcecentre.com',
       'id': 51
@@ -651,7 +651,7 @@ export class ServerService {
       'city': 'Whitehorse',
       'region': 'Yukon',
       'postal': 'Y1A 2K1',
-      'category': 'Organsime',
+      'category': 'Organisme',
       'phone': '867-668-2663',
       'email': 'tourisme@afy.yk.ca',
       'id': 58
@@ -843,7 +843,7 @@ export class ServerService {
       'email': 'abccountry@telus.net',
       'id': 75
     }, {
-      'company': 'Les Conseils scolaires du sud - CSSA/CSCFSA Franco sud',
+      'company': 'Les Conseil scolaires du sud - CSSA/CSCFSA Franco sud',
       'contact': 'Brigitte St-Hilaire',
       'address': '6940 Fisher Road, SE',
       'city': 'Calgary',
@@ -970,7 +970,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '',
       'email': 'j.lavoie@telus.net',
       'id': 87
@@ -981,7 +981,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5R 5W9',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '',
       'email': 'rangasamykavita@gmail.com',
       'id': 88
@@ -1025,7 +1025,7 @@ export class ServerService {
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': '',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '',
       'email': 'maudebombardier@gmil.com',
       'id': 92
@@ -1069,7 +1069,7 @@ export class ServerService {
       'city': 'Alberta Beach',
       'region': 'Alberta',
       'postal': 'T7Z 0A6',
-      'category': 'Conseils',
+      'category': 'Conseil',
       'phone': '',
       'email': '',
       'id': 96
@@ -1151,10 +1151,10 @@ export class ServerService {
   getByCategory(): Map<string, number[]> {
     const map = new Map();
     for (const company of this.companies) {
-      map[company.category] = [];
+      map.set(company.category, []);
     }
     for (const company of this.companies) {
-      map[company.category].push(company.id);
+      map.get(company.category).push(company.id);
     }
     return map;
   }

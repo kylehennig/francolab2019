@@ -23,19 +23,16 @@ export class ListPage implements OnInit {
   public items: Array<{ title: string; note: string; icon: string }> = [];
 
   constructor(private server: ServerService) {
-    // this.items.push({
-    //         title: this.server.companies[0].category,
-    //         note: 'This is item #',
-    //         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-    // });
-    for (const company of this.server.companies) {
-      console.log("companty: " + company.category);
+    console.log(this.server.getByCategory());
+    this.server.getByCategory().forEach((companies, category) => {
+      console.log(category);
       this.items.push({
-        title: company.category,
-        note: 'This is item #',
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+        title: category,
+        note: '',
+        icon: ''
+        // this.icons[Math.floor(Math.random() * this.icons.length)]
       });
-    }
+    });
   }
 
   ngOnInit() {
