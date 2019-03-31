@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>settings</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Réglages
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-list-header>Carte</ion-list-header>
+    <ion-item>
+      <ion-label>3D</ion-label>
+      <ion-toggle [(ngModel)]="settings.threeD"></ion-toggle>
+    </ion-item>
+  </ion-list>
 
+  <ion-list>
+    <ion-list-header>Information</ion-list-header>
+    <ion-item (click)="openWebsite()">Site web</ion-item>
+  </ion-list>
 </ion-content>

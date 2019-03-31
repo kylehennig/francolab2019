@@ -25,6 +25,11 @@ export class AppComponent {
       title: 'Rabais',
       url: '/sales',
       icon: 'cash'
+    },
+    {
+      title: 'Réglages',
+      url: '/settings',
+      icon: 'settings'
     }
   ];
 
