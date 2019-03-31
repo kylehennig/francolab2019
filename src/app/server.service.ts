@@ -1355,7 +1355,7 @@ export class ServerService {
     },
     {
       'id': 19,
-      'description': 'Solde de fin de saison, 15% de réduction sur tout',
+      'description': 'Solde de fin de saison, 15% de réduction sur tous les articles.',
     },
     {
       'id': 46,
