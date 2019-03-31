@@ -1,9 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>list-item</ion-title>
+    <ion-title>{{category}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card *ngFor="let company of companies">
+    <ion-card-header>
+      <ion-card-title>{{company.company}}</ion-card-title>
+      <ion-card-subtitle>{{company.address + ' ' + company.city + ' ' + company.region}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{company.phone}}</p>
+      <p>{{company.email}}</p>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
