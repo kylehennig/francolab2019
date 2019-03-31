@@ -4,11 +4,11 @@ import { Company } from '../company';
 import { ServerService } from '../server.service';
 
 @Component({
-  selector: 'app-list-item',
-  templateUrl: './list-item.page.html',
-  styleUrls: ['./list-item.page.scss'],
+  selector: 'app-categories-item',
+  templateUrl: './categories-item.page.html',
+  styleUrls: ['./categories-item.page.scss'],
 })
-export class ListItemPage implements OnInit {
+export class CategoriesItemPage implements OnInit {
   category: string;
   companies: Company[] = [];
   constructor(

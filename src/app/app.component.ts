@@ -18,7 +18,7 @@ export class AppComponent {
     },
     {
       title: 'Catégories',
-      url: '/list',
+      url: '/categories',
       icon: 'funnel'
     }
   ];

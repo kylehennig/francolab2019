@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ServerService } from '../server.service';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: 'list.page.html',
-  styleUrls: ['list.page.scss']
+  selector: 'app-categories',
+  templateUrl: 'categories.page.html',
+  styleUrls: ['categories.page.scss']
 })
-export class ListPage implements OnInit {
+export class CategoriesPage implements OnInit {
   private selectedItem: any;
   public items: Array<string> = [];
 
