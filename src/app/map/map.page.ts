@@ -202,7 +202,7 @@ async loadMap() {
   async selectResult(id: number) {
     this.searching = false;
     this.searchText = this.server.getCompany(id).company;
-    this.dispMarker(id);
+    this.dispMarkerData(id);
   }
 
     async dispMarkerData(id: number) {
