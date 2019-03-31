@@ -24,7 +24,7 @@ export class AppComponent {
     {
       title: 'Rebais',
       url: '/sales',
-      icon: 'usd'
+      icon: 'cash'
     }
   ];
 

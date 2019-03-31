@@ -18,8 +18,8 @@
     </ion-card-header>
 
     <ion-card-content>
-      <a *ngIf="company.phone" (click)="call(company.phone)">{{company.phone}}</a><br>
-      <a *ngIf="company.email" (click)="email(company.email)">{{company.email}}</a>
+      <a *ngIf="company.phone !== ''" (click)="call(company.phone)">{{company.phone}}</a><br>
+      <a *ngIf="company.email !== ''" (click)="email(company.email)">{{company.email}}</a>
     </ion-card-content>
 
     <ion-button expand="block" routerLink="/map/{{company.id}}" routerDirection="root">
