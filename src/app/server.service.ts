@@ -1139,7 +1139,23 @@ export class ServerService {
       'phone': '',
       'email': 'daniel.lachance@live.com',
       'id': 102
-    }]
+    }
+  ];
 
   constructor() { }
+
+  /**
+   * Creates a map of categories to a list of company ids in that category.
+   * @returns The map.
+   */
+  getByCategory(): Map<string, number[]> {
+    const map = new Map();
+    for (const company of this.companies) {
+      map[company.category] = [];
+    }
+    for (const company of this.companies) {
+      map[company.category].push(company.id);
+    }
+    return map;
+  }
 }
