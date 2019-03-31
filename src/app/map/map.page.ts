@@ -176,26 +176,23 @@ export class MapPage implements OnInit {
   }
 
   async dispMarker(id: number) {
-    console.log(id);
-    console.log("test");
-    var company = this.server.companies[id];
-    let options: GeocoderRequest = {
-      address: company.address + " " + company.city + " " + company.region
+    const company = this.server.companies[id];
+    const options: GeocoderRequest = {
+      address: company.address + ' ' + company.city + ' ' + company.region
     };
 
-    // console.log(this.geocoder.geocode(options));
     Geocoder.geocode(options).then((results: GeocoderResult[]) => {
       console.log(results);
       return this.map.addMarker({
         'position': results[0].position,
         'title':  company.company
-      })
-    })
-    await console.log("test2");
+      });
+    });
   }
 
   async selectResult(id: number) {
     this.searching = false;
     this.searchText = this.server.getCompany(id).company;
+    this.dispMarker(id);
   }
 }
