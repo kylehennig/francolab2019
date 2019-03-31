@@ -83,6 +83,7 @@ export class MapPage implements OnInit {
 
   async onButtonClick() {
     this.map.clear();
+    console.log(this.server.companies[1].company);
 
     this.loading = await this.loadingCtrl.create({
       message: 'Please wait...'

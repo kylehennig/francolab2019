@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServerService } from '../server.service';
 
 @Component({
   selector: 'app-list',
@@ -20,11 +21,18 @@ export class ListPage implements OnInit {
     'build'
   ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
-    for (let i = 1; i < 11; i++) {
+
+  constructor(private server: ServerService) {
+    // this.items.push({
+    //         title: this.server.companies[0].category,
+    //         note: 'This is item #',
+    //         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+    // });
+    for (const company of this.server.companies) {
+      console.log("companty: " + company.category);
       this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
+        title: company.category,
+        note: 'This is item #',
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
