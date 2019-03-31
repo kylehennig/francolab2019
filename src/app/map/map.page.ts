@@ -14,16 +14,18 @@ import {
 } from '@ionic-native/google-maps';
 import { ServerService } from '../server.service';
 
+const MAX_MATCHES = 10;
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.page.html',
   styleUrls: ['./map.page.scss'],
 })
 export class MapPage implements OnInit {
-
   map: GoogleMap;
   loading: any;
   queryText = '';
+  queryMatches: string[] = [];
 
   constructor(
     public loadingCtrl: LoadingController,
@@ -135,6 +137,16 @@ export class MapPage implements OnInit {
   }
 
   async onSearch() {
-    // TODO.
+    const matches: string[] = [];
+    const queryLower = this.queryText.toLowerCase();
+    for (const company of this.server.companies) {
+      if (company.company.toLowerCase().startsWith(queryLower)) {
+        matches.push(company.company);
+        if (matches.length >= MAX_MATCHES) {
+          break;
+        }
+      }
+    }
+    this.queryMatches = matches;
   }
 }
