@@ -46,7 +46,8 @@ export class MapPage implements OnInit {
   }
 
 
-  loadMap() {
+async loadMap() {
+
     this.map = GoogleMaps.create('map_canvas', {
       camera: {
         target: {
@@ -86,11 +87,18 @@ export class MapPage implements OnInit {
         }
       ]
     });
+    this.loading = await this.loadingCtrl.create({
+      message: 'Please wait...'
+    });
+    await this.loading.present();
+    this.loading.dismiss();
+    for (let i = 0; i < this.server.companies.length; i++) {
+      this.dispMarkerData(i);
+    }
   }
 
   async onButtonClick() {
     this.map.clear();
-    console.log(this.server.companies[1].company);
 
     this.loading = await this.loadingCtrl.create({
       message: 'Please wait...'
@@ -129,8 +137,6 @@ export class MapPage implements OnInit {
     this.loading.dismiss();
     //   this.showToast(err.error_message);
     // });
-
-    this.dispMarker(0);
   }
 
 
@@ -165,7 +171,7 @@ export class MapPage implements OnInit {
     this.searchResults = matches;
   }
 
-  async dispMarker(id: number) {
+  async dispMarkerApi(id: number) {
     console.log(id);
     console.log("test");
     var company = this.server.companies[id];
@@ -183,5 +189,18 @@ export class MapPage implements OnInit {
     })
     await console.log("test2");
 
+  }
+
+    async dispMarkerData(id: number) {
+    console.log(id);
+    console.log("test");
+    var company = this.server.companies[id];
+    return this.map.addMarker({
+        'position': {
+          "lat" : company.lat,
+          "lng" : company.lng
+        },
+        'title':  company.company
+      })
   }
 }
