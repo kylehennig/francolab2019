@@ -24,8 +24,8 @@ const MAX_MATCHES = 10;
 export class MapPage implements OnInit {
   map: GoogleMap;
   loading: any;
-  queryText = '';
-  queryMatches: string[] = [];
+  searchText = '';
+  searchResults: string[] = [];
 
   constructor(
     public loadingCtrl: LoadingController,
@@ -136,23 +136,23 @@ export class MapPage implements OnInit {
   }
 
   async onSearch() {
-    if (this.queryText === '') {
-      // No query.
-      this.queryMatches = [];
+    if (this.searchText === '') {
+      // No search gives no results.
+      this.searchResults = [];
       return;
     }
 
     // Finds the matching companies.
     const matches: string[] = [];
-    const queryLower = this.queryText.toLowerCase();
+    const searchLower = this.searchText.toLowerCase();
     for (const company of this.server.companies) {
-      if (company.company.toLowerCase().startsWith(queryLower)) {
+      if (company.company.toLowerCase().startsWith(searchLower)) {
         matches.push(company.company);
         if (matches.length >= MAX_MATCHES) {
           break;
         }
       }
     }
-    this.queryMatches = matches;
+    this.searchResults = matches;
   }
 }

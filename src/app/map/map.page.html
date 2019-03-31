@@ -3,16 +3,16 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-searchbar [(ngModel)]="queryText" (ionChange)="onSearch()"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="searchText" (ionChange)="onSearch()"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list id="matches" [hidden]="queryMatches.length === 0">
-    <ion-item *ngFor="let match of queryMatches">
-      <ion-label>{{match}}</ion-label>
+  <ion-list [hidden]="searchResults.length === 0">
+    <ion-item *ngFor="let result of searchResults">
+      <ion-label>{{result}}</ion-label>
     </ion-item>
   </ion-list>
-  <div id="map_canvas" [hidden]="queryMatches.length > 0"></div>
-  <ion-button ion-button (click)="onButtonClick()" [hidden]="queryMatches.length > 0">Demo</ion-button>
+  <div id="map_canvas" [hidden]="searchResults.length > 0"></div>
+  <ion-button ion-button (click)="onButtonClick()" [hidden]="searchResults.length > 0">Demo</ion-button>
 </ion-content>
