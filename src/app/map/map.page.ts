@@ -18,11 +18,12 @@ import {
   MarkerOptions,
   LatLng,
   CameraPosition,
-  ILatLng
+  ILatLng,
+  GoogleMapOptions
 } from '@ionic-native/google-maps';
 import { ServerService } from '../server.service';
 import { Company } from '../company';
-
+import { SettingsService } from '../settings.service';
 
 const MAX_MATCHES = 10;
 
@@ -38,13 +39,61 @@ export class MapPage implements OnInit {
   searching = false;
   searchText = '';
   searchResults: Company[] = [];
+  options: GoogleMapOptions = {
+    camera: {
+      target: {
+        lat: 53.5444,
+        lng: -113.4909
+      },
+      zoom: 15,
+    },
+    controls: {
+      compass: true,
+      myLocation: true,
+      myLocationButton: true,
+      mapToolbar: true
+    },
+    gestures: {
+      tilt: this.settings.threeD
+    },
+    styles: [
+      {
+        'featureType': 'poi',
+        'elementType': 'all',
+        'stylers': [
+          {
+            'visibility': 'off'
+          }
+        ]
+      },
+      {
+        'featureType': 'poi.park',
+        'elementType': 'all',
+        'stylers': [
+          {
+            'visibility': 'off'
+          }
+        ]
+      },
+      {
+        'featureType': 'transit.station',
+        'elementType': 'all',
+        'stylers': [
+          {
+            'visibility': 'off'
+          }
+        ]
+      }
+    ]
+  };
 
   constructor(
     private activatedRoute: ActivatedRoute,
     public loadingCtrl: LoadingController,
     public toastCtrl: ToastController,
     private platform: Platform,
-    private server: ServerService) { }
+    private server: ServerService,
+    private settings: SettingsService) { }
 
   async ngOnInit() {
     // Since ngOnInit() is executed before `deviceready` event,
@@ -57,58 +106,14 @@ export class MapPage implements OnInit {
     if (id !== NaN) {
       this.focusOnId(id);
     }
+    this.settings.subscribeThreeD(threeD => {
+      this.options.gestures.tilt = threeD;
+      this.map.setOptions(this.options);
+    });
   }
 
-
   async loadMap() {
-    this.map = GoogleMaps.create('map_canvas', {
-      camera: {
-        target: {
-          lat: 53.5444,
-          lng: -113.4909
-        },
-        zoom: 15,
-        // tilt: 30
-      },
-      controls: {
-        compass: true,
-        myLocation: true,
-        myLocationButton: true,
-        mapToolbar: true
-      },
-      gestures: {
-        tilt: false
-      },
-      styles: [
-        {
-          'featureType': 'poi',
-          'elementType': 'all',
-          'stylers': [
-            {
-              'visibility': 'off'
-            }
-          ]
-        },
-        {
-          'featureType': 'poi.park',
-          'elementType': 'all',
-          'stylers': [
-            {
-              'visibility': 'off'
-            }
-          ]
-        },
-        {
-          'featureType': 'transit.station',
-          'elementType': 'all',
-          'stylers': [
-            {
-              'visibility': 'off'
-            }
-          ]
-        }
-      ]
-    });
+    this.map = GoogleMaps.create('map_canvas', this.options);
   }
 
   async blueDot() {
@@ -223,7 +228,7 @@ export class MapPage implements OnInit {
   async dispMarkerApi(id: number) {
     const company = this.server.companies[id];
     const options: GeocoderRequest = {
-      address: company.address + " " + company.city + " " + company.region
+      address: company.address + ' ' + company.city + ' ' + company.region
     };
     Geocoder.geocode(options).then((results: GeocoderResult[]) => {
       return this.map.addMarker({
@@ -258,8 +263,7 @@ export class MapPage implements OnInit {
         'title': company.company,
         'snippet': info,
       });
-    }
-    else {
+    } else {
       return this.map.addMarker({
         'position': {
           'lat': company.lat,
