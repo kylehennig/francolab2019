@@ -213,14 +213,6 @@ export class MapPage implements OnInit {
     this.searching = true;
   }
 
-  async searchFocus() {
-    this.searching = true;
-  }
-
-  async searchUnfocus() {
-    this.searching = false;
-  }
-
   async dispMarkerApi(id: number) {
     const company = this.server.companies[id];
     const options: GeocoderRequest = {
