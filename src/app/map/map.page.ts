@@ -210,16 +210,15 @@ async loadMap() {
         }
       }
     }
-
     if (matches.length < 2) {
       // An exact match should not suggest results.
       this.searching = false;
       return;
     }
-
     this.searching = true;
     this.searchResults = matches;
   }
+
 
   async dispMarkerApi(id: number) {
     let company = this.server.companies[id];
@@ -234,6 +233,7 @@ async loadMap() {
       });
     });
   }
+
 
   async selectResult(id: number) {
     this.searching = false;
