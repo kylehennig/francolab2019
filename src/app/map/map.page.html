@@ -9,6 +9,9 @@
 
 <ion-content>
   <ion-list [hidden]="!searching">
+    <ion-item *ngIf="searchResults.length === 0">
+      <ion-label>Aucun résultat</ion-label>
+    </ion-item>
     <ion-item *ngFor="let result of searchResults" (click)="selectResult(result.id)">
       <ion-label>{{result.company}}</ion-label>
     </ion-item>

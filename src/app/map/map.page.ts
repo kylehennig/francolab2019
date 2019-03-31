@@ -37,6 +37,7 @@ export class MapPage implements OnInit {
   geocoder: Geocoder;
   loading: any;
   searching = false;
+  autocompleted = false;
   searchText = '';
   searchResults: Company[] = [];
   options: GoogleMapOptions = {
@@ -199,8 +200,14 @@ export class MapPage implements OnInit {
   }
 
   async onSearch() {
+    if (this.autocompleted) {
+      // Event triggered by autocomplete. Ignore.
+      this.autocompleted = false;
+      return;
+    }
+
     if (this.searchText === '') {
-      // No search gives no results.
+      // No search.
       this.searching = false;
       return;
     }
@@ -209,20 +216,18 @@ export class MapPage implements OnInit {
     const matches: Company[] = [];
     const searchLower = this.searchText.toLowerCase();
     for (const company of this.server.companies) {
-      if (company.company.toLowerCase().startsWith(searchLower)) {
+      const companyLower = company.company.toLowerCase();
+      if (companyLower.startsWith(searchLower)) {
         matches.push(company);
         if (matches.length >= MAX_MATCHES) {
           break;
         }
       }
     }
-    if (matches.length < 2) {
-      // An exact match should not suggest results.
-      this.searching = false;
-      return;
-    }
-    this.searching = true;
+
+    // Suggests results.
     this.searchResults = matches;
+    this.searching = true;
   }
 
   async dispMarkerApi(id: number) {
@@ -239,8 +244,11 @@ export class MapPage implements OnInit {
   }
 
   async selectResult(id: number) {
-    this.searching = false;
+    // Autocompletes the search text.
+    this.autocompleted = true;
     this.searchText = this.server.getCompany(id).company;
+    this.searching = false;
+    // Displays the company.
     this.dispMarkerData(id);
     this.focusOnId(id);
   }
