@@ -13,7 +13,11 @@ import {
   MyLocation,
   Geocoder,
   GeocoderRequest,
-  GeocoderResult
+  GeocoderResult,
+  MarkerOptions,
+  LatLng,
+  CameraPosition,
+  ILatLng
 } from '@ionic-native/google-maps';
 import { ServerService } from '../server.service';
 import { Company } from '../company';
@@ -33,6 +37,7 @@ export class MapPage implements OnInit {
   searching = false;
   searchText = '';
   searchResults: Company[] = [];
+  // bearMarker: Marker;
 
   constructor(
     public loadingCtrl: LoadingController,
@@ -45,11 +50,12 @@ export class MapPage implements OnInit {
     // you have to wait the event.
     await this.platform.ready();
     await this.loadMap();
+    await this.dispAllMark();
+    await this.blueDot();
   }
 
 
 async loadMap() {
-
     this.map = GoogleMaps.create('map_canvas', {
       camera: {
         target: {
@@ -89,6 +95,28 @@ async loadMap() {
         }
       ]
     });
+  }
+
+
+  async blueDot() {
+// Get the location of you
+    this.map.getMyLocation().then((location: MyLocation) => {
+      this.loading.dismiss();
+
+      // add a marker
+      const marker: Marker = this.map.addMarkerSync({
+        position: location.latLng,
+        // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+        icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
+      });
+    })
+    .catch(err => {
+    this.loading.dismiss();
+    });
+  }
+
+
+  async dispAllMark() {
     this.loading = await this.loadingCtrl.create({
       message: 'Please wait...'
     });
@@ -97,7 +125,11 @@ async loadMap() {
     for (let i = 0; i < this.server.companies.length; i++) {
       this.dispMarkerData(i);
     }
+
+
   }
+
+
 
   async onButtonClick() {
     this.map.clear();
@@ -137,6 +169,7 @@ async loadMap() {
     // })
     // .catch(err => {
     this.loading.dismiss();
+    this.blueDot();
     //   this.showToast(err.error_message);
     // });
   }
@@ -182,14 +215,10 @@ async loadMap() {
   }
 
   async dispMarkerApi(id: number) {
-    console.log(id);
-    console.log("test");
     var company = this.server.companies[id];
     let options: GeocoderRequest = {
       address: company.address + " " + company.city + " " + company.region
     };
-
-
     Geocoder.geocode(options).then((results: GeocoderResult[]) => {
       console.log(results);
       return this.map.addMarker({
@@ -205,9 +234,8 @@ async loadMap() {
     this.dispMarkerData(id);
   }
 
+
     async dispMarkerData(id: number) {
-    console.log(id);
-    console.log("test");
     var company = this.server.companies[id];
     return this.map.addMarker({
         'position': {
