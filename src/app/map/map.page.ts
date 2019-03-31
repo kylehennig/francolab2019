@@ -105,7 +105,7 @@ export class MapPage implements OnInit {
     const id = parseInt(this.activatedRoute.snapshot.paramMap.get('id'), 10);
     console.log(id);
     if (id !== NaN) {
-      this.focusOnId(id);
+      this.selectResult(id);
     }
     this.settings.subscribeThreeD(threeD => {
       this.options.gestures.tilt = threeD;
@@ -249,7 +249,6 @@ export class MapPage implements OnInit {
     this.searchText = this.server.getCompany(id).company;
     this.searching = false;
     // Displays the company.
-    this.dispMarkerData(id);
     this.focusOnId(id);
   }
 
