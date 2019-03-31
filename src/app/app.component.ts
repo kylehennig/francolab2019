@@ -22,7 +22,7 @@ export class AppComponent {
       icon: 'funnel'
     },
     {
-      title: 'Rebais',
+      title: 'Rabais',
       url: '/sales',
       icon: 'cash'
     }
