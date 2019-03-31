@@ -23,9 +23,7 @@ export class ListPage implements OnInit {
   public items: Array<{ title: string; note: string; icon: string }> = [];
 
   constructor(private server: ServerService) {
-    console.log(this.server.getByCategory());
     this.server.getByCategory().forEach((companies, category) => {
-      console.log(category);
       this.items.push({
         title: category,
         note: '',

@@ -10,9 +10,13 @@ import {
   GoogleMapsEvent,
   Marker,
   GoogleMapsAnimation,
-  MyLocation
+  MyLocation,
+  Geocoder,
+  GeocoderRequest,
+  GeocoderResult
 } from '@ionic-native/google-maps';
 import { ServerService } from '../server.service';
+
 
 const MAX_MATCHES = 10;
 
@@ -23,6 +27,7 @@ const MAX_MATCHES = 10;
 })
 export class MapPage implements OnInit {
   map: GoogleMap;
+  geocoder: Geocoder;
   loading: any;
   searchText = '';
   searchResults: string[] = [];
@@ -39,6 +44,7 @@ export class MapPage implements OnInit {
     await this.platform.ready();
     await this.loadMap();
   }
+
 
   loadMap() {
     this.map = GoogleMaps.create('map_canvas', {
@@ -91,39 +97,42 @@ export class MapPage implements OnInit {
     });
     await this.loading.present();
 
-    // Get the location of you
-    this.map.getMyLocation().then((location: MyLocation) => {
-      this.loading.dismiss();
-      console.log(JSON.stringify(location, null, 2));
+    // // Get the location of you
+    // this.map.getMyLocation().then((location: MyLocation) => {
+    //   this.loading.dismiss();
+    //   console.log(JSON.stringify(location, null, 2));
 
-      // Move the map camera to the location with animation
-      this.map.animateCamera({
-        target: location.latLng,
-        zoom: 17,
-        tilt: 30
-      });
+    //   // Move the map camera to the location with animation
+    //   this.map.animateCamera({
+    //     target: location.latLng,
+    //     zoom: 17,
+    //     tilt: 30
+    //   });
 
-      // add a marker
-      const marker: Marker = this.map.addMarkerSync({
-        title: '@ionic-native/google-maps plugin!',
-        snippet: 'This plugin is awesome!',
-        position: location.latLng,
-        animation: GoogleMapsAnimation.BOUNCE
-      });
+    //   // add a marker
+    //   const marker: Marker = this.map.addMarkerSync({
+    //     title: '@ionic-native/google-maps plugin!',
+    //     snippet: 'This plugin is awesome!',
+    //     position: location.latLng,
+    //     animation: GoogleMapsAnimation.BOUNCE
+    //   });
 
-      // show the infoWindow
-      marker.showInfoWindow();
+    //   // show the infoWindow
+    //   marker.showInfoWindow();
 
-      // If clicked it, display the alert
-      marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
-        this.showToast('clicked!');
-      });
-    })
-      .catch(err => {
-        this.loading.dismiss();
-        this.showToast(err.error_message);
-      });
+    //   // If clicked it, display the alert
+    //   marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
+    //     this.showToast('clicked!');
+    //   });
+    // })
+    // .catch(err => {
+    this.loading.dismiss();
+    //   this.showToast(err.error_message);
+    // });
+
+    this.dispMarker(0);
   }
+
 
   async showToast(message: string) {
     const toast = await this.toastCtrl.create({
@@ -154,5 +163,25 @@ export class MapPage implements OnInit {
       }
     }
     this.searchResults = matches;
+  }
+
+  async dispMarker(id: number) {
+    console.log(id);
+    console.log("test");
+    var company = this.server.companies[id];
+    let options: GeocoderRequest = {
+      address: company.address + " " + company.city + " " + company.region
+    };
+
+    // console.log(this.geocoder.geocode(options));
+    Geocoder.geocode(options).then((results: GeocoderResult[]) => {
+      console.log(results);
+      return this.map.addMarker({
+        'position': results[0].position,
+        'title':  company.company
+      })
+    })
+    await console.log("test2");
+
   }
 }
