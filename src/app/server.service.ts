@@ -1380,7 +1380,7 @@ export class ServerService {
    * Gets a company by id.
    * @param id The id.
    */
-  getCompany(id: number) {
+  getCompany(id: number): Company {
     return this.companies[id];
   }
 
@@ -1388,8 +1388,16 @@ export class ServerService {
   * Gets a sale by id.
   * @param id The id.
   */
-  getSale(id: number) {
+  getSale(id: number): Sale {
     return this.idSaleMap.get(id);
+  }
+
+  /**
+  * Checks if a company has a sale.
+  * @param id The id.
+  */
+  onSale(id: number): boolean {
+    return this.idSaleMap.has(id);
   }
 
   /**
