@@ -14,7 +14,7 @@ export class ListPage implements OnInit {
     this.server.getByCategory().forEach((companies, category) => {
       this.items.push(category);
     });
-    this.items.sort();
+    this.items.sort(function (a, b) { return a.localeCompare(b, "fr"); });;
   }
 
   ngOnInit() {

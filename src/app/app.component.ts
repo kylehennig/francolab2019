@@ -12,12 +12,12 @@ import { Environment } from '@ionic-native/google-maps/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Map',
+      title: 'Carte',
       url: '/map',
       icon: 'map'
     },
     {
-      title: 'Categories',
+      title: 'Catégories',
       url: '/list',
       icon: 'list'
     }
