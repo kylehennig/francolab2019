@@ -20,9 +20,9 @@ export class ServerService {
       'lat': 45.452151,
       'lng': -75.733148
     }, {
-      'company': 'The Co-Opporators',
+      'company': 'The Co-operators',
       'contact': 'Linda Nadeau',
-      'address': '130 Macdonell street',
+      'address': '130 Macdonell Street',
       'city': 'Guelph',
       'region': 'Ontario',
       'postal': 'N1H 6P8',
@@ -35,7 +35,7 @@ export class ServerService {
     }, {
       'company': 'Novhaus',
       'contact': 'Aurelien Balondona',
-      'address': '1401 8th street',
+      'address': '1401 8th Street',
       'city': 'Nisku',
       'region': 'Alberta',
       'postal': 'T9E 7M5',
@@ -46,9 +46,9 @@ export class ServerService {
       'lat': 43.546086,
       'lng': -80.246159
     }, {
-      'company': 'Centre collégial de l\'Alberta',
+      'company': 'Centre Collégial de l\'Alberta',
       'contact': 'Dolorèse Nolette',
-      'address': '8406 91 street NW',
+      'address': '8406 91 Street NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 4G9',
@@ -72,9 +72,9 @@ export class ServerService {
       'lat': 53.520278,
       'lng': -113.468312
     }, {
-      'company': 'La Cité francophone',
+      'company': 'La Cité Francophone',
       'contact': 'Daniel Cournoyer',
-      'address': '202-8627 rue Marie-Anne- Gaboury (91e)',
+      'address': '202-8627 Rue Marie-Anne-Gaboury (91e)',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
@@ -85,9 +85,9 @@ export class ServerService {
       'lat': 53.485515,
       'lng': -113.487518
     }, {
-      'company': 'Oohoo IT services inc.',
+      'company': 'Oohoo IT Services inc.',
       'contact': 'Patrick Thibaudeau',
-      'address': '8627 91 Street ,#38',
+      'address': '8627 91 Street, #38',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
@@ -98,9 +98,9 @@ export class ServerService {
       'lat': 53.522437,
       'lng': -113.466438
     }, {
-      'company': 'PwC Société d\'avocats',
+      'company': 'PwC Société d\'Avocats',
       'contact': 'Jean-Phillipe Couture',
-      'address': '111 5th Ave SW',
+      'address': '111 5th Avenue SW',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2P 5L3',
@@ -111,9 +111,9 @@ export class ServerService {
       'lat': 53.522528,
       'lng': -113.466302
     }, {
-      'company': 'Bergeron & Co,CGA',
+      'company': 'Bergeron & Co, CGA',
       'contact': 'Simon Belzile',
-      'address': '8925 82 Ave NW',
+      'address': '8925 82 Avenue NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 0Z2',
@@ -126,7 +126,7 @@ export class ServerService {
     }, {
       'company': 'Kem’s Fashion Manufacturing',
       'contact': 'Thierry Kouembi',
-      'address': '2320 35 Ave NE',
+      'address': '2320 35 Avenue NE',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2E 6S9',
@@ -163,7 +163,7 @@ export class ServerService {
       'lat': 51.093109,
       'lng': -114.089137
     }, {
-      'company': 'GITASA Concrete ltd.',
+      'company': 'GITASA Concrete Ltd.',
       'contact': 'Emmanuel Nyandwi',
       'address': 'Sandin Crescent, NW',
       'city': 'Edmonton',
@@ -191,7 +191,7 @@ export class ServerService {
     }, {
       'company': 'dRN Law LLP',
       'contact': 'Andréa de Rocquigny',
-      'address': '144 4e avenue SW,suite 1600,',
+      'address': '144 4e Avenue SW, Suite 1600,',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2P 3W4',
@@ -202,7 +202,7 @@ export class ServerService {
       'lat': 53.522437,
       'lng': -113.466438
     }, {
-      'company': 'Fédération des parents francophones de l\'Alberta',
+      'company': 'Fédération des Parents Francophones de l\'Alberta',
       'contact': 'Mireille Péloquin',
       'address': '8627 Rue Marie-Anne Gaboury, Suite 112',
       'city': 'Edmonton',
@@ -217,7 +217,7 @@ export class ServerService {
     }, {
       'company': 'Connexion Carrière',
       'contact': 'Erwan Goasdoue',
-      'address': 'Bow Valley College,West Campus, 300 6e Avenue, SE',
+      'address': 'Bow Valley College, West Campus, 300 6e Avenue, SE',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2G 0G5',
@@ -267,9 +267,9 @@ export class ServerService {
       'lat': 53.52325,
       'lng': -113.512339
     }, {
-      'company': 'Centre national de musique (Studio Bell)',
+      'company': 'Centre National de Musique (Studio Bell)',
       'contact': 'Julijana Capone',
-      'address': '850 4 Street Southeast',
+      'address': '850 4 Street SE',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2G 0L8',
@@ -293,9 +293,9 @@ export class ServerService {
       'lat': 51.044551,
       'lng': -114.052597
     }, {
-      'company': 'Francois le roi fine Chocolatier Paris',
-      'contact': 'Francois Le roi',
-      'address': '8116 gateway blvd nw',
+      'company': 'Francois Le Roi Fine Chocolatier Paris',
+      'contact': 'Francois Le Roi',
+      'address': '8116 Gateway Boulevard, NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6E 4B1',
@@ -308,7 +308,7 @@ export class ServerService {
     }, {
       'company': 'Kem’s Fashion Manufacturing',
       'contact': 'Thierry Kouembi',
-      'address': '2320 35 Ave NE',
+      'address': '2320 35 Avenue NE',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2E 6S9',
@@ -319,7 +319,7 @@ export class ServerService {
       'lat': 53.517441,
       'lng': -113.495099
     }, {
-      'company': 'Fédération du sport francophone de l\'Alberta',
+      'company': 'Fédération du Sport Francophone de l\'Alberta',
       'contact': 'Céline Dumais',
       'address': '8627 Rue Marie-Anne Gaboury, Suite 308',
       'city': 'Edmonton',
@@ -334,7 +334,7 @@ export class ServerService {
     }, {
       'company': 'Sunu Accounting Services Corp.',
       'contact': 'Anta Lowe',
-      'address': '10510-107 ave',
+      'address': '10510-107 Avenue',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5H 0W2',
@@ -345,9 +345,9 @@ export class ServerService {
       'lat': 53.522437,
       'lng': -113.466438
     }, {
-      'company': 'DD  Kandolo  et Associates',
+      'company': 'DD Kandolo  et Associates',
       'contact': 'Dieudonné Kandolo',
-      'address': '2nd floor,10510- 107 Avenue',
+      'address': '2e étage,10510- 107 Avenue',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5H 0W2',
@@ -373,7 +373,7 @@ export class ServerService {
     }, {
       'company': 'Olsatools',
       'contact': 'Charles-Antoine Marois',
-      'address': '8627 Rue Marie-Anne Gaboury,    Suite 140-P',
+      'address': '8627 Rue Marie-Anne Gaboury, Suite 140-P',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 4S8',
@@ -384,7 +384,7 @@ export class ServerService {
       'lat': 53.354016,
       'lng': -110.858626
     }, {
-      'company': 'Coach I Tout dans la tête I Performance',
+      'company': 'Coach I Tout Dans La Tête I Performance',
       'contact': 'Nolan Bernhardt',
       'address': '10104 67 Street',
       'city': 'St Peace River',
@@ -399,7 +399,7 @@ export class ServerService {
     }, {
       'company': 'Le Campus Saint-Jean',
       'contact': 'Pierre-Yves Mocquais',
-      'address': '8406,91 Street',
+      'address': '8406 91 Street',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 4G9',
@@ -410,9 +410,9 @@ export class ServerService {
       'lat': 56.227886,
       'lng': -117.35874
     }, {
-      'company': 'Quartier francophone',
+      'company': 'Quartier Francophone',
       'contact': 'Jean Johnson',
-      'address': '8925 82 Avenue NW, bureau 207',
+      'address': '8925 82 Avenue NW, Bureau 207',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 0Z2',
@@ -438,7 +438,7 @@ export class ServerService {
     }, {
       'company': 'Sketch Nanotechnologies Inc.',
       'contact': 'Alain Vadeboncoeur',
-      'address': '4612 48e Avenue, suite 1',
+      'address': '4612 48 Avenue, Suite 1',
       'city': 'Innisfail',
       'region': 'Alberta',
       'postal': 'T4G 1N5',
@@ -451,7 +451,7 @@ export class ServerService {
     }, {
       'company': 'ACFA Régionale Centralta',
       'contact': 'Cathy Pellerin, directrice',
-      'address': 'C.P328, 5109 46e rue',
+      'address': 'C.P328, 5109 46e Street',
       'city': 'Legal',
       'region': 'Alberta',
       'postal': 'T0G 1L0',
@@ -477,7 +477,7 @@ export class ServerService {
     }, {
       'company': 'DRONEBUZZ',
       'contact': 'Martin Vendrame',
-      'address': '2803 James Mowatt Trail, SO,',
+      'address': '2803 James Mowatt Trail, SW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6W 2P5',
@@ -501,9 +501,9 @@ export class ServerService {
       'lat': 53.404756,
       'lng': -113.535536
     }, {
-      'company': 'Stratégie et Gouvernance de l\'information',
+      'company': 'Stratégie et Gouvernance de l\'Information',
       'contact': 'François Giroux',
-      'address': '3 Thornfield Close Southeast',
+      'address': '3 Thornfield Close SE',
       'city': 'Airdrie',
       'region': 'Alberta',
       'postal': 'T4A 2K7',
@@ -529,7 +529,7 @@ export class ServerService {
     }, {
       'company': 'Financière Banque Nationale',
       'contact': 'Bruno Mercier',
-      'address': '10175 101 rue Nw, suite 1800',
+      'address': '10175 101 Street NW, Suite 1800',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5J 0H3',
@@ -542,7 +542,7 @@ export class ServerService {
     }, {
       'company': 'Bermont Realty (1983) Ltd.',
       'contact': 'Guy C. Hébert',
-      'address': '14 perron Street suite 200',
+      'address': '14 Perron Street, Suite 200',
       'city': 'St-Albert',
       'region': 'Alberta',
       'postal': 'T8N 1E4',
@@ -579,7 +579,7 @@ export class ServerService {
       'lat': 51.037936,
       'lng': -114.053328
     }, {
-      'company': 'Fédération des conseils scolaires francophones de l\'Alberta',
+      'company': 'Fédération des Conseils Scolaires Francophones de l\'Alberta',
       'contact': 'Donald Michaud',
       'address': 'CP 1220',
       'city': 'ST-Isidore',
@@ -592,7 +592,7 @@ export class ServerService {
       'lat': 51.177508,
       'lng': -115.571271
     }, {
-      'company': 'Société de développement économique de la Colombie-Britannique',
+      'company': 'Société de Développement Économique de la Colombie-Britannique',
       'contact': 'Mylène Letellier',
       'address': '1555 7e Avenue W, Suite 220',
       'city': 'Vancouver',
@@ -631,7 +631,7 @@ export class ServerService {
       'lat': 51.14529,
       'lng': -114.025916
     }, {
-      'company': 'Musée des dinosaures Philip J. Currie',
+      'company': 'Musée des Dinosaures Philip J. Currie',
       'contact': 'Brandon Low',
       'address': 'Box 328 9301, 112e Avenue',
       'city': 'Wembley',
@@ -657,7 +657,7 @@ export class ServerService {
       'lat': 55.152666,
       'lng': -119.147889
     }, {
-      'company': 'Centre culturel et village historique Métis Crossing',
+      'company': 'Centre Culturel et Village Historique Métis Crossing',
       'contact': 'Juanita Marois',
       'address': 'Box 548 17339, Victoria trail',
       'city': 'Smoky Lake',
@@ -696,7 +696,7 @@ export class ServerService {
       'lat': 51.090654,
       'lng': -115.359042
     }, {
-      'company': 'Centre d\'arts visuels de l\'Alberta',
+      'company': 'Centre d\'Arts Visuels de l\'Alberta',
       'contact': 'Patrick Dunn',
       'address': '9103 95 Avenue NW',
       'city': 'Edmonton',
@@ -750,7 +750,7 @@ export class ServerService {
     }, {
       'company': 'ACFA Calgary',
       'contact': 'Geneviève Cournoyer-Scalise',
-      'address': '840 7 Avenue SW, suite 1601',
+      'address': '840 7 Avenue SW, Suite 1601',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2P 3G2',
@@ -761,7 +761,7 @@ export class ServerService {
       'lat': 51.049407,
       'lng': -115.318475
     }, {
-      'company': 'Association franco-yukonnaise',
+      'company': 'Association Franco-Yukonnaise',
       'contact': 'Emylie Thibeault-Maloney',
       'address': '302 Strickland Street',
       'city': 'Whitehorse',
@@ -776,7 +776,7 @@ export class ServerService {
     }, {
       'company': 'ACFA Jasper',
       'contact': 'Alexandra Denommée',
-      'address': '500 rue Robson',
+      'address': '500 Street Robson',
       'city': 'Jasper',
       'region': 'Alberta',
       'postal': 'T0E 1E0',
@@ -802,7 +802,7 @@ export class ServerService {
     }, {
       'company': 'Accès Emploi',
       'contact': 'Nathalie Beauregard',
-      'address': '202-8627 rue Marie-Anne- Gaboury (91e)',
+      'address': '202-8627 Rue Marie-Anne-Gaboury (91e)',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
@@ -816,7 +816,7 @@ export class ServerService {
       'company': 'Hotel Arts',
       'contact': 'Christie Goss',
       'address': '119 12 Avenue SW',
-      'city': 'calgary',
+      'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2R 0G8',
       'category': 'Hotel',
@@ -852,9 +852,9 @@ export class ServerService {
       'lat': 49.694083,
       'lng': -112.833038
     }, {
-      'company': 'Village historique Heritage Park',
+      'company': 'Village Historique Heritage Park',
       'contact': 'Julie Copland-Stene',
-      'address': '1900 Heritage Drive, SW',
+      'address': '1900 Heritage Drive SW',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2V 2X3',
@@ -867,7 +867,7 @@ export class ServerService {
     }, {
       'company': 'EggsOasis Déjeuner & Dîner',
       'contact': 'Khisrow Sadid',
-      'address': '2797 Main St SW #160,',
+      'address': '2797 Main Street SW, #160',
       'city': 'Airdrie',
       'region': 'Alberta',
       'postal': 'T4B 3G2',
@@ -880,7 +880,7 @@ export class ServerService {
     }, {
       'company': 'Région de Smoky River',
       'contact': 'Diane Chiasson',
-      'address': '701 Main Street,SW',
+      'address': '701 Main Street, SW',
       'city': 'Falher',
       'region': 'Alberta',
       'postal': 'T0H 1M0',
@@ -891,9 +891,9 @@ export class ServerService {
       'lat': 51.264363,
       'lng': -114.006495
     }, {
-      'company': 'Fête franco-albertaine',
+      'company': 'Fête Franco-Albertaine',
       'contact': 'Alexandra Daigle',
-      'address': '8627 91 Street, Numero 308',
+      'address': '8627 91 Street, #308',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
@@ -904,7 +904,7 @@ export class ServerService {
       'lat': 55.729775,
       'lng': -117.20185
     }, {
-      'company': 'Lieu historique national de la Mine-de-Charbon-Atlas',
+      'company': 'Lieu Historique National De La Mine-de-Charbon-Atlas',
       'contact': 'Jessica Jeninga',
       'address': 'Box 521 110 Century Drive',
       'city': 'East Coulee',
@@ -917,7 +917,7 @@ export class ServerService {
       'lat': 53.522489,
       'lng': -113.466378
     }, {
-      'company': 'Alliance française de Calgary',
+      'company': 'Alliance Française de Calgary',
       'contact': 'Jean-Baptiste Roux',
       'address': '1721 29 Avenue, SW',
       'city': 'Calgary',
@@ -930,7 +930,7 @@ export class ServerService {
       'lat': 51.329019,
       'lng': -112.482323
     }, {
-      'company': 'ACFA provinciale',
+      'company': 'ACFA Provinciale',
       'contact': 'Hélène Guillemette',
       'address': '8627 91 Street, Bureau 303',
       'city': 'Edmonton',
@@ -984,7 +984,7 @@ export class ServerService {
     }, {
       'company': 'ABC Country Restaurant',
       'contact': 'Charles Leclerc',
-      'address': '2095 Geatz Avenue Red Deer',
+      'address': '2095 Geatz Avenue',
       'city': 'Red Deer',
       'region': 'Alberta',
       'postal': 'T4R 1Z4',
@@ -995,9 +995,9 @@ export class ServerService {
       'lat': 53.357751,
       'lng': -113.414526
     }, {
-      'company': 'Les Conseil scolaires du sud - CSSA/CSCFSA Franco sud',
+      'company': 'Les Conseil Scolaires du Sud - CSSA/CSCFSA Franco Sud',
       'contact': 'Brigitte St-Hilaire',
-      'address': '6940 Fisher Road, SE',
+      'address': '6940 Fisher Road SE',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2H 0W3',
@@ -1010,7 +1010,7 @@ export class ServerService {
     }, {
       'company': 'La Société des Manoirs Saint-Joachim et Saint-Thomas',
       'contact': 'Roch Labelle',
-      'address': '11020 99 Avenue, NW',
+      'address': '11020 99 Avenue NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5K 2M2',
@@ -1023,7 +1023,7 @@ export class ServerService {
     }, {
       'company': 'Sylvain Lacroix, Investisseur Immobilier Professionel',
       'contact': 'Sylvain Lacroix',
-      'address': '626 24 Avenue, SW, Suite 207',
+      'address': '626 24 Avenue SW, Suite 207',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2S 0K6',
@@ -1049,7 +1049,7 @@ export class ServerService {
     }, {
       'company': 'Le Franco',
       'contact': 'Hélène Lequitte',
-      'address': '8627 91 rue, Bureau 312',
+      'address': '8627 91 Rue, Bureau 312',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
@@ -1062,7 +1062,7 @@ export class ServerService {
     }, {
       'company': 'BASE 2A INTERNATIONALE INC.',
       'contact': 'KOUAKOU JEAN-MARIE KONAN',
-      'address': '9240 213 ST NW, 206',
+      'address': '9240 213 Street NW, #206',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5T 4P4',
@@ -1074,8 +1074,8 @@ export class ServerService {
       'lng': -113.466961
     }, {
       'company': 'Canadian Moving Services',
-      'contact': 'francine drapeau',
-      'address': '4516 81 Avenue nw',
+      'contact': 'Francine Drapeau',
+      'address': '4516 81 Avenue NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6B 2M2',
@@ -1116,7 +1116,7 @@ export class ServerService {
       'contact': 'Anne Giguère',
       'address': '8 Bermondsey Rise NW,',
       'city': 'Calgary',
-      'region': 'alberta',
+      'region': 'Alberta',
       'postal': 'T3K 1T9',
       'category': 'Graphisme',
       'phone': '',
@@ -1125,7 +1125,7 @@ export class ServerService {
       'lat': 52.268112,
       'lng': -113.811239
     }, {
-      'company': 'Sikati Enterprises ltd',
+      'company': 'Sikati Enterprises Ltd.',
       'contact': 'Clément Fogue',
       'address': '',
       'city': 'Calgary',
@@ -1138,7 +1138,7 @@ export class ServerService {
       'lat': 51.126851,
       'lng': -114.085858
     }, {
-      'company': 'L2L Consulting LTD',
+      'company': 'L2L Consulting Ltd.',
       'contact': 'Joël F. Lavoie',
       'address': '8627 Rue Marie-Anne Gaboury',
       'city': 'Edmonton',
@@ -1166,7 +1166,7 @@ export class ServerService {
     }, {
       'company': 'Mario Glass',
       'contact': 'Mario Raymond',
-      'address': '17332, 86e Avenue, Edmonton, AB, Canada',
+      'address': '17332, 86 Avenue',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5T 2B5',
@@ -1179,7 +1179,7 @@ export class ServerService {
     }, {
       'company': 'GHB Ventures',
       'contact': 'Guillaume Bédard',
-      'address': '702 - 1208 14TH AVENUE SW',
+      'address': '702 - 1208 14 Avenue SW',
       'city': 'Calgary',
       'region': 'Aberta',
       'postal': 'T3C 0V9',
@@ -1192,7 +1192,7 @@ export class ServerService {
     }, {
       'company': 'Sunco Communication',
       'contact': 'Cédrick Leblanc',
-      'address': '18961 111 Ave NW',
+      'address': '18961 111 Avenue NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5S 2X4',
@@ -1203,7 +1203,7 @@ export class ServerService {
       'lat': 51.040133,
       'lng': -114.077254
     }, {
-      'company': 'The Laughing hour',
+      'company': 'The Laughing Hour',
       'contact': 'Maude Bombardier',
       'address': '',
       'city': 'Edmonton',
@@ -1218,10 +1218,10 @@ export class ServerService {
     }, {
       'company': 'Alberta\'s Lakeland DMO',
       'contact': 'Marianne Janke',
-      'address': '',
-      'city': '',
-      'region': '',
-      'postal': '',
+      'address': '5015 49 Avenue',
+      'city': 'St Paul',
+      'region': 'Alberta',
+      'postal': 'T0A 3A4',
       'category': 'Tourisme',
       'phone': '',
       'email': '',
@@ -1270,7 +1270,7 @@ export class ServerService {
     }, {
       'company': 'Creative Element',
       'contact': 'Aurélien Jondeau',
-      'address': '830 Centre Ave NE',
+      'address': '830 Centre Avenue NE',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2E 9C3',
@@ -1295,8 +1295,8 @@ export class ServerService {
       'lng': -113.407676
     }, {
       'company': 'Clearcut Assurance',
-      'contact': 'Mamadou ( Oury) Barry',
-      'address': '16403 111 Ave NW',
+      'contact': 'Mamadou (Oury) Barry',
+      'address': '16403 111 Avenue NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5M 2S2',
@@ -1322,7 +1322,7 @@ export class ServerService {
     }, {
       'company': 'Town of Morinville',
       'contact': 'BRAD WHITE',
-      'address': '10125-100Ave',
+      'address': '10125 100 Avenue',
       'city': 'Morinville',
       'region': 'Alberta',
       'postal': 'T8R 1L6',
@@ -1335,7 +1335,7 @@ export class ServerService {
     }, {
       'company': 'Lachance Maple Syrup',
       'contact': 'Daniel Lachance',
-      'address': '9338, 94e Rue',
+      'address': '9338, 94 Street',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3V7',
