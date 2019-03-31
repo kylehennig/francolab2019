@@ -23,4 +23,23 @@ export class ListItemPage implements OnInit {
       this.companies.push(company);
     });
   }
+
+  digitsOnly(input: string) {
+    const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let output = '';
+    for (const char of input) {
+      if (digits.includes(char)) {
+        output += char;
+      }
+    }
+    return output;
+  }
+
+  call(phoneNumber: string) {
+    window.location.href = 'tel:' + this.digitsOnly(phoneNumber);
+  }
+
+  email(email: string) {
+    window.location.href = 'mailto:' + email;
+  }
 }

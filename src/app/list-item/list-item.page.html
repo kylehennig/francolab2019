@@ -15,8 +15,8 @@
     </ion-card-header>
 
     <ion-card-content>
-      <p>{{company.phone}}</p>
-      <p>{{company.email}}</p>
+      <a *ngIf="company.phone" (click)="call(company.phone)">{{company.phone}}</a><br>
+      <a *ngIf="company.email" (click)="email(company.email)">{{company.email}}</a>
     </ion-card-content>
   </ion-card>
 
