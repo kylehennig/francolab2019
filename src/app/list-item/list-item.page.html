@@ -11,7 +11,7 @@
   <ion-card *ngFor="let company of companies">
     <ion-card-header>
       <ion-card-title>{{company.company}}</ion-card-title>
-      <ion-card-subtitle>{{company.address + ' ' + company.city + ' ' + company.region}}</ion-card-subtitle>
+      <ion-card-subtitle>{{fullAddress(company.id)}}</ion-card-subtitle>
     </ion-card-header>
 
     <ion-card-content>
