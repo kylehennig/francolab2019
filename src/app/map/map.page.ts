@@ -64,6 +64,12 @@ async loadMap() {
         zoom: 11,
         tilt: 30
       },
+      controls : {
+        compass: true,
+        myLocation: true,
+        myLocationButton: true,
+        mapToolbar: true
+      },
       styles: [
         {
           'featureType': 'poi',
@@ -214,7 +220,7 @@ async loadMap() {
   }
 
   async dispMarkerApi(id: number) {
-    var company = this.server.companies[id];
+    let company = this.server.companies[id];
     let options: GeocoderRequest = {
       address: company.address + " " + company.city + " " + company.region
     };
@@ -235,7 +241,7 @@ async loadMap() {
 
 
     async dispMarkerData(id: number) {
-    var company = this.server.companies[id];
+    let company = this.server.companies[id];
     return this.map.addMarker({
         'position': {
           "lat" : company.lat,
@@ -244,4 +250,19 @@ async loadMap() {
         'title':  company.company
       })
   }
+
+
+
+    async focusOnId(id: number) {
+      let company = this.server.companies[id];
+      this.map.animateCamera({
+        target: {"lat": company.lat,
+                "lng": company.lng},
+        zoom: 17,
+        tilt: 30
+      });
+  }
+
 }
+
+
