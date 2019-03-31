@@ -66,7 +66,6 @@ export class MapPage implements OnInit {
         target: {
           lat: 53.5444,
           lng: -113.4909
-
         },
         zoom: 15,
         // tilt: 30
@@ -256,8 +255,7 @@ export class MapPage implements OnInit {
       target: {
         'lat': company.lat,
         'lng': company.lng
-      },
-      zoom: 12,
+      }
     });
   }
 
@@ -265,5 +263,3 @@ export class MapPage implements OnInit {
     return this.map.getMyLocation().then(location => location.latLng);
   }
 }
-
-
