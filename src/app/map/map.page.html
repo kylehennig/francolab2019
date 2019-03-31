@@ -8,6 +8,11 @@
 </ion-header>
 
 <ion-content>
-  <div id="map_canvas"></div>
-  <ion-button ion-button (click)="onButtonClick()">Demo</ion-button>
+  <ion-list id="matches" [hidden]="queryMatches.length === 0">
+    <ion-item *ngFor="let match of queryMatches">
+      <ion-label>{{match}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <div id="map_canvas" [hidden]="queryMatches.length > 0"></div>
+  <ion-button ion-button (click)="onButtonClick()" [hidden]="queryMatches.length > 0">Demo</ion-button>
 </ion-content>

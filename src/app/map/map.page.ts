@@ -82,7 +82,6 @@ export class MapPage implements OnInit {
     });
   }
 
-
   async onButtonClick() {
     this.map.clear();
     console.log(this.server.companies[1].company);
@@ -137,6 +136,13 @@ export class MapPage implements OnInit {
   }
 
   async onSearch() {
+    if (this.queryText === '') {
+      // No query.
+      this.queryMatches = [];
+      return;
+    }
+
+    // Finds the matching companies.
     const matches: string[] = [];
     const queryLower = this.queryText.toLowerCase();
     for (const company of this.server.companies) {
