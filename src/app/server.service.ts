@@ -1347,6 +1347,17 @@ export class ServerService {
       'lng': -113.490927
     }
   ];
+  sales: Sale[] = [
+    {
+      'id': 0,
+      'description': 'Si tu viens acheter des chausures, on peut te donner une autre gratuit.'
+    },
+    {
+      'id': 1,
+      'description': '15 pourcent de soldes sur tout les chocolats!!!'
+    }
+  ];
+
   private categoryCompanyMap = new Map();
 
   constructor() {
