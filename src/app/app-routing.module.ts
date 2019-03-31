@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'map/:id',
     loadChildren: './map/map.module#MapPageModule'
   },
+  {
+    path: 'sales',
+    loadChildren: './sales/sales.module#SalesPageModule'
+  },
 ];
 
 @NgModule({

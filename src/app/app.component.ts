@@ -20,6 +20,11 @@ export class AppComponent {
       title: 'Catégories',
       url: '/categories',
       icon: 'funnel'
+    },
+    {
+      title: 'Rebais',
+      url: '/sales',
+      icon: 'usd'
     }
   ];
 
