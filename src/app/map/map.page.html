@@ -9,8 +9,8 @@
 
 <ion-content>
   <ion-list [hidden]="!searching">
-    <ion-item *ngFor="let result of searchResults">
-      <ion-label (click)="selectResult(result.id)">{{result.company}}</ion-label>
+    <ion-item *ngFor="let result of searchResults" (click)="selectResult(result.id)">
+      <ion-label>{{result.company}}</ion-label>
     </ion-item>
   </ion-list>
   <div id="map_canvas" [hidden]="searching"></div>
