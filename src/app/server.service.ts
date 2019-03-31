@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServerService {
-  data = [
+  companies = [
     {
       'company': 'Choquet Insurance Group Ltd.',
       'contact': 'Gilles Choquet',
