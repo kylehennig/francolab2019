@@ -22,7 +22,7 @@ export class ListItemPage implements OnInit {
       const company = this.server.getCompany(id);
       this.companies.push(company);
     });
-    this.companies.sort(function (a, b) { return a.company.localeCompare(b.company, "fr"); });;
+    this.companies.sort((a, b) => a.company.localeCompare(b.company, 'fr'));
   }
 
   digitsOnly(input: string) {
