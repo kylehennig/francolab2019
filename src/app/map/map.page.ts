@@ -122,7 +122,6 @@ export class MapPage implements OnInit {
         // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
         // icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
         'icon': '../../assets/saleMarker.png',
-
       });
     })
       .catch(err => {
@@ -248,6 +247,7 @@ export class MapPage implements OnInit {
         'lat': company.lat,
         'lng': company.lng
       },
+      // 'icon': '../../assets/saleMarker@2x.png',
       'title': company.company
     });
   }
