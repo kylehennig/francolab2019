@@ -1363,7 +1363,7 @@ export class ServerService {
     },
     {
        'id': 32,
-       'description': 'Achete 1h de traduction et revecois 30 minutes gratuit!'
+       'description': 'Achetez 1h de traduction et revecez 30 minutes gratuit!'
     }
   ];
 
