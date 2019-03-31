@@ -242,14 +242,26 @@ export class MapPage implements OnInit {
 
   async dispMarkerData(id: number) {
     const company = this.server.companies[id];
-    return this.map.addMarker({
-      'position': {
-        'lat': company.lat,
-        'lng': company.lng
-      },
-      // 'icon': '../../assets/saleMarker@2x.png',
-      'title': company.company
-    });
+    if (this.server.onSale(id)) {
+      return this.map.addMarker({
+        'position': {
+          'lat': company.lat,
+          'lng': company.lng
+        },
+        'icon': '../../assets/saleMarker.png',
+        'title': company.company
+      });
+    }
+    else {
+      return this.map.addMarker({
+        'position': {
+          'lat': company.lat,
+          'lng': company.lng
+        },
+        // 'icon': '../../assets/saleMarker.png',
+        'title': company.company
+      });
+    }
   }
 
   async focusOnId(id: number) {
@@ -262,7 +274,7 @@ export class MapPage implements OnInit {
     });
   }
 
-  async getCurrentLocation(): Promise<LatLng> {
-    return this.map.getMyLocation().then(location => location.latLng);
-  }
+  // async getCurrentLocation(): Promise<LatLng> {
+  //   return this.map.getMyLocation().then(location => location.latLng);
+  // }
 }
