@@ -9,4 +9,6 @@ export class Company {
     phone: string;
     email: string;
     id: number;
+    lat: number;
+    lng: number;
 }

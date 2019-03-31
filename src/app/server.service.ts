@@ -16,7 +16,9 @@ export class ServerService {
       'category': 'Assurance',
       'phone': '800-265-2662',
       'email': 'gilles_choquet@cooperators.ca',
-      'id': 0
+      'id': 0,
+      'lat': 53.48839,
+      'lng': -113.418074
     }, {
       'company': 'The Co-Opporators',
       'contact': 'Linda Nadeau',
@@ -27,7 +29,9 @@ export class ServerService {
       'category': 'Assurance',
       'phone': '1-800-265-2662',
       'email': 'the_co-operators_member_relations@cooperators.ca',
-      'id': 1
+      'id': 1,
+      'lat': 43.546086,
+      'lng': -80.246159
     }, {
       'company': 'Novhaus',
       'contact': 'Aurelien Balondona',
@@ -38,7 +42,9 @@ export class ServerService {
       'category': 'Construction',
       'phone': '403-880-4588',
       'email': 'abalondona@novhaus.com',
-      'id': 2
+      'id': 2,
+      'lat': 53.544389,
+      'lng': -113.490927
     }, {
       'company': 'Centre collégial de l\'Alberta',
       'contact': 'Dolorèse Nolette',
@@ -49,7 +55,9 @@ export class ServerService {
       'category': 'Éducation',
       'phone': '780-492-3111',
       'email': 'dnolette@ualberta.ca',
-      'id': 3
+      'id': 3,
+      'lat': 53.520278,
+      'lng': -113.468312
     }, {
       'company': 'Schmidt Realty Group Inc.',
       'contact': 'Jeffrey Fafard',
@@ -60,7 +68,9 @@ export class ServerService {
       'category': 'Immobilier',
       'phone': '780-994-0874',
       'email': 'jeff.fafard@weselledmonton.com',
-      'id': 4
+      'id': 4,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'La Cité francophone',
       'contact': 'Daniel Cournoyer',
@@ -71,7 +81,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-463-1144',
       'email': 'lacite@lacitefranco.ca',
-      'id': 5
+      'id': 5,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Oohoo IT services inc.',
       'contact': 'Patrick Thibaudeau',
@@ -82,7 +94,9 @@ export class ServerService {
       'category': 'Services',
       'phone': '780-800-8712',
       'email': '',
-      'id': 6
+      'id': 6,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'PwC Société d\'avocats',
       'contact': 'Jean-Phillipe Couture',
@@ -93,7 +107,9 @@ export class ServerService {
       'category': 'Avocat',
       'phone': '403-509-7500',
       'email': 'jean-p.couture@pwc.com',
-      'id': 7
+      'id': 7,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Bergeron & Co,CGA',
       'contact': 'Simon Belzile',
@@ -104,7 +120,9 @@ export class ServerService {
       'category': 'Services',
       'phone': '780-468-1667',
       'email': 'simon@bergeron-cga.com',
-      'id': 8
+      'id': 8,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Kem’s Fashion Manufacturing',
       'contact': 'Thierry Kouembi',
@@ -115,7 +133,9 @@ export class ServerService {
       'category': 'Directeur',
       'phone': '403-776-4436',
       'email': 'info@kemsfashion.com',
-      'id': 9
+      'id': 9,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Vertical Oxygen',
       'contact': 'Nathalie Callede',
@@ -126,7 +146,9 @@ export class ServerService {
       'category': 'Art',
       'phone': '403-861-3732',
       'email': 'nathalie@verticaloxygen.com',
-      'id': 10
+      'id': 10,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'AJEFA',
       'contact': 'Denise Lavallée',
@@ -137,7 +159,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-450-2443',
       'email': 'bureau@ajefa.ca',
-      'id': 11
+      'id': 11,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'GITASA Concrete ltd.',
       'contact': 'Emmanuel Nyandwi',
@@ -148,7 +172,9 @@ export class ServerService {
       'category': 'Construction',
       'phone': '780-932-9317',
       'email': 'gitasaconcreteltd@gmail.com',
-      'id': 12
+      'id': 12,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'UR DECO',
       'contact': 'Tamra Estay',
@@ -159,7 +185,9 @@ export class ServerService {
       'category': 'Événementiel',
       'phone': '780-604-4904',
       'email': 'ur.deco.events@gmail.com',
-      'id': 13
+      'id': 13,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'dRN Law LLP',
       'contact': 'Andréa de Rocquigny',
@@ -170,7 +198,9 @@ export class ServerService {
       'category': 'Avocat',
       'phone': '403-407-2733',
       'email': 'andrea@drnlaw.ca',
-      'id': 14
+      'id': 14,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Fédération des parents francophones de l\'Alberta',
       'contact': 'Mireille Péloquin',
@@ -181,7 +211,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-468-6934',
       'email': 'info@fpfa.ab.ca',
-      'id': 15
+      'id': 15,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Connexion Carrière',
       'contact': 'Erwan Goasdoue',
@@ -192,7 +224,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '587-390-6262',
       'email': 'egoasdoue@bowvalleycollege.ca',
-      'id': 16
+      'id': 16,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Yann Haute Pâtisserie',
       'contact': 'Jéraldine Blanchard',
@@ -203,7 +237,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '403-244-8091',
       'email': 'jeraldineblanchard@yannboutique.com',
-      'id': 17
+      'id': 17,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'La Poutine',
       'contact': 'Francis Côté',
@@ -214,7 +250,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '780-757-7222',
       'email': 'info@la-poutine.com',
-      'id': 18
+      'id': 18,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Rocky Mountain Ski Lodge',
       'contact': 'Donna Trautman',
@@ -225,7 +263,9 @@ export class ServerService {
       'category': 'Tourisme',
       'phone': '800-665-6111',
       'email': 'info@rockyski.ca',
-      'id': 19
+      'id': 19,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Centre national de musique (Studio Bell)',
       'contact': 'Julijana Capone',
@@ -236,7 +276,9 @@ export class ServerService {
       'category': 'Art',
       'phone': '403-543-5123',
       'email': 'julijana.capone@nmc.ca',
-      'id': 20
+      'id': 20,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Professional Business Connection Centre',
       'contact': 'France Lavoie-Deeprose',
@@ -247,7 +289,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '780-948-0374',
       'email': 'france@dghe.ca',
-      'id': 21
+      'id': 21,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Francois le roi fine Chocolatier Paris',
       'contact': 'Francois Le roi',
@@ -258,7 +302,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '780-803-4744',
       'email': 'francoisleroichocolatier@gmail.com',
-      'id': 22
+      'id': 22,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Kem’s Fashion Manufacturing',
       'contact': 'Thierry Kouembi',
@@ -269,7 +315,9 @@ export class ServerService {
       'category': 'Mode',
       'phone': '403-399-1880',
       'email': 'info@kemsfashion.com',
-      'id': 23
+      'id': 23,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Fédération du sport francophone de l\'Alberta',
       'contact': 'Céline Dumais',
@@ -280,7 +328,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-469-1367',
       'email': 'c.dumay@lafsfa.ca',
-      'id': 24
+      'id': 24,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Sunu Accounting Services Corp.',
       'contact': 'Anta Lowe',
@@ -291,7 +341,9 @@ export class ServerService {
       'category': 'Services',
       'phone': '587-920-8226',
       'email': 'sunuas2016@gmail.com',
-      'id': 25
+      'id': 25,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'DD  Kandolo  et Associates',
       'contact': 'Dieudonné Kandolo',
@@ -302,7 +354,9 @@ export class ServerService {
       'category': 'Avocat',
       'phone': '780-800-1839',
       'email': 'dkand2003@gmail.com',
-      'id': 26
+      'id': 26,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'The Old School Cheesery Ltd.',
       'contact': 'Patrick Dupuis',
@@ -313,7 +367,9 @@ export class ServerService {
       'category': 'Art',
       'phone': '306-914-0327',
       'email': 'theoldschoolcheesery@gmail.com',
-      'id': 27
+      'id': 27,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Olsatools',
       'contact': 'Charles-Antoine Marois',
@@ -324,7 +380,9 @@ export class ServerService {
       'category': 'Vente en ligne',
       'phone': '',
       'email': 'charles@olsatools.com',
-      'id': 28
+      'id': 28,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Coach I Tout dans la tête I Performance',
       'contact': 'Nolan Bernhardt',
@@ -335,7 +393,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '416-451-6688',
       'email': 'contact@toutdanslatete.com',
-      'id': 29
+      'id': 29,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Le Campus Saint-Jean',
       'contact': 'Pierre-Yves Mocquais',
@@ -346,7 +406,9 @@ export class ServerService {
       'category': 'Éducation',
       'phone': '780-465-8766',
       'email': 'adjdoyen@ualberta.ca',
-      'id': 30
+      'id': 30,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Quartier francophone',
       'contact': 'Jean Johnson',
@@ -357,7 +419,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '587-524-9399',
       'email': 'info@frenchquarteredmonton.ca',
-      'id': 31
+      'id': 31,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Marcus Translations',
       'contact': 'Marcus Zeidan',
@@ -368,7 +432,9 @@ export class ServerService {
       'category': 'Traduction',
       'phone': '613-715-0670',
       'email': 'mzeidan67@gmail.com',
-      'id': 32
+      'id': 32,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Sketch Nanotechnologies Inc.',
       'contact': 'Alain Vadeboncoeur',
@@ -379,7 +445,9 @@ export class ServerService {
       'category': 'Construction',
       'phone': '403-598-0113',
       'email': 'alainv@sketchnano.com',
-      'id': 33
+      'id': 33,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA Régionale Centralta',
       'contact': 'Cathy Pellerin, directrice',
@@ -390,7 +458,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-961-3665',
       'email': 'direction.centralta@acfa.ab.ca',
-      'id': 34
+      'id': 34,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Commun\'e-Action',
       'contact': 'Isabelle Déchène-Guay',
@@ -401,7 +471,9 @@ export class ServerService {
       'category': 'Traduction',
       'phone': '780-716-6465',
       'email': 'communeaction@gmail.com',
-      'id': 35
+      'id': 35,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'DRONEBUZZ',
       'contact': 'Martin Vendrame',
@@ -412,7 +484,9 @@ export class ServerService {
       'category': 'Vidéos',
       'phone': '780-934-9062',
       'email': 'martin@dronebuzz.ca',
-      'id': 36
+      'id': 36,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Creative Coco Nuts Inc',
       'contact': 'Julie Picard',
@@ -423,7 +497,9 @@ export class ServerService {
       'category': 'Site internet',
       'phone': '780-909-5091',
       'email': 'jpicard@creativecoconuts.ca',
-      'id': 37
+      'id': 37,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Stratégie et Gouvernance de l\'information',
       'contact': 'François Giroux',
@@ -434,7 +510,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '403-390-9577',
       'email': 'fgiroux@shaw.ca',
-      'id': 38
+      'id': 38,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'C&BC',
       'contact': 'Jean Marc MONS',
@@ -445,7 +523,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '587-586-8058',
       'email': 'contact@candbc.net',
-      'id': 39
+      'id': 39,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Financière Banque Nationale',
       'contact': 'Bruno Mercier',
@@ -456,7 +536,9 @@ export class ServerService {
       'category': 'Services',
       'phone': '780-412-6614',
       'email': 'bruno.mercier@nbf.ca',
-      'id': 40
+      'id': 40,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Bermont Realty (1983) Ltd.',
       'contact': 'Guy C. Hébert',
@@ -467,7 +549,9 @@ export class ServerService {
       'category': 'Immobilier',
       'phone': '780-459-7786',
       'email': 'guy@bermontrealty.com',
-      'id': 41
+      'id': 41,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Stampede de Calgary',
       'contact': 'Lindsay Jardine',
@@ -478,7 +562,9 @@ export class ServerService {
       'category': 'Tourisme',
       'phone': '403-261-0101',
       'email': 'ljardine@calgarystampede.com',
-      'id': 42
+      'id': 42,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'SkiBig3 - Banff-Lake Louise-Sunshine',
       'contact': 'Jeneviève Leblanc',
@@ -489,7 +575,9 @@ export class ServerService {
       'category': 'Tourisme',
       'phone': '844-754-2443',
       'email': 'jenevieve@skibig3.com',
-      'id': 43
+      'id': 43,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Fédération des conseils scolaires francophones de l\'Alberta',
       'contact': 'Donald Michaud',
@@ -500,7 +588,9 @@ export class ServerService {
       'category': 'Education',
       'phone': '780-624-8855',
       'email': 'fcsfa@rogers.com',
-      'id': 44
+      'id': 44,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Société de développement économique de la Colombie-Britannique',
       'contact': 'Mylène Letellier',
@@ -511,7 +601,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '604-732-3534',
       'email': 'mletellier@sdecb.com/ info@sdecb.com',
-      'id': 45
+      'id': 45,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Caravel Craft Brewery',
       'contact': 'Vladislav Covali',
@@ -522,7 +614,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '587-899-3113',
       'email': 'info@caravelbrewery.com',
-      'id': 46
+      'id': 46,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'By Jean Michel',
       'contact': 'Jean-Michel Gires',
@@ -533,7 +627,9 @@ export class ServerService {
       'category': 'Mode',
       'phone': '403-973-4833',
       'email': 'jeanmichel.gires@yahoo.com',
-      'id': 47
+      'id': 47,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Musée des dinosaures Philip J. Currie',
       'contact': 'Brandon Low',
@@ -544,7 +640,9 @@ export class ServerService {
       'category': 'Art',
       'phone': '587-771-0662',
       'email': 'blow@dinomuseum.ca',
-      'id': 48
+      'id': 48,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Ville de Bonnyville',
       'contact': 'Tracy Ghostkeeper',
@@ -555,7 +653,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '780-826-3496',
       'email': 'admin@town.bonnyville.ab.ca',
-      'id': 49
+      'id': 49,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Centre culturel et village historique Métis Crossing',
       'contact': 'Juanita Marois',
@@ -566,7 +666,9 @@ export class ServerService {
       'category': 'Tourisme',
       'phone': '780-656-2229',
       'email': 'jmarois@metis.org',
-      'id': 50
+      'id': 50,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'The Job Resource Centre',
       'contact': 'Naomi Hoffmann',
@@ -577,7 +679,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '403-678-6630',
       'email': 'naomi@jobresourcecentre.com',
-      'id': 51
+      'id': 51,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Chez François',
       'contact': 'Sylvie Grégoire',
@@ -588,7 +692,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '403-678-6111',
       'email': 'sylvie@restaurantchezfrancois.com.',
-      'id': 52
+      'id': 52,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Centre d\'arts visuels de l\'Alberta',
       'contact': 'Patrick Dunn',
@@ -599,7 +705,9 @@ export class ServerService {
       'category': 'Art',
       'phone': '780-461-3427',
       'email': 'direction@galeriecava.com',
-      'id': 53
+      'id': 53,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA St-Paul',
       'contact': 'Claudie-Anne Lampron',
@@ -610,7 +718,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-645-4800',
       'email': 'saint-paul@acfa.ab.ca',
-      'id': 54
+      'id': 54,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA Bonnyville',
       'contact': 'Thérèse Dallaire',
@@ -621,7 +731,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-466-1680',
       'email': 'direction.bonnyville@acfa.ab.ca',
-      'id': 55
+      'id': 55,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA Canmore-Banff',
       'contact': 'François Rolland',
@@ -632,7 +744,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '403-678-7582',
       'email': 'presidence.canmore-b@acfa.ab.ca',
-      'id': 56
+      'id': 56,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA Calgary',
       'contact': 'Geneviève Cournoyer-Scalise',
@@ -643,7 +757,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '403-532-8576',
       'email': 'adjoint.calgary@acfa.ab.ca',
-      'id': 57
+      'id': 57,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Association franco-yukonnaise',
       'contact': 'Emylie Thibeault-Maloney',
@@ -654,7 +770,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '867-668-2663',
       'email': 'tourisme@afy.yk.ca',
-      'id': 58
+      'id': 58,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA Jasper',
       'contact': 'Alexandra Denommée',
@@ -665,7 +783,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-852-7476',
       'email': 'jasper@acfa.ab.ca',
-      'id': 59
+      'id': 59,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA Wood Buffalo',
       'contact': 'Khady Koné',
@@ -676,7 +796,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-791-7700',
       'email': 'adjointe.woodbuffalo@acfa.ab.ca',
-      'id': 60
+      'id': 60,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Accès Emploi',
       'contact': 'Nathalie Beauregard',
@@ -687,7 +809,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '780-826-9003',
       'email': 'nathalie.beauregard@accesemploi.net',
-      'id': 61
+      'id': 61,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Hotel Arts',
       'contact': 'Christie Goss',
@@ -698,7 +822,9 @@ export class ServerService {
       'category': 'Hotel',
       'phone': '403-266-4611',
       'email': 'cgoss@hotelarts.ca',
-      'id': 62
+      'id': 62,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Comté de Lethbridge',
       'contact': 'Martin Ebel',
@@ -709,7 +835,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '403-328-5525',
       'email': 'mebel@lethcounty.ca',
-      'id': 63
+      'id': 63,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Ramada Plaza Calgary Downtown',
       'contact': 'Clara Desmarteau',
@@ -720,7 +848,9 @@ export class ServerService {
       'category': 'Hotel',
       'phone': '403-218-3038',
       'email': 'cdesmarteau@ramadacalgary.com',
-      'id': 64
+      'id': 64,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Village historique Heritage Park',
       'contact': 'Julie Copland-Stene',
@@ -731,7 +861,9 @@ export class ServerService {
       'category': 'Tourisme',
       'phone': '403-2688-566',
       'email': 'JCopland-Stene@heritagepark.ca',
-      'id': 65
+      'id': 65,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'EggsOasis Déjeuner & Dîner',
       'contact': 'Khisrow Sadid',
@@ -742,7 +874,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '403-980-0344',
       'email': 'k_sadid@hotmail.com',
-      'id': 66
+      'id': 66,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Région de Smoky River',
       'contact': 'Diane Chiasson',
@@ -753,7 +887,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '780-837-2453',
       'email': 'diane.chiasson@lecdea.ca',
-      'id': 67
+      'id': 67,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Fête franco-albertaine',
       'contact': 'Alexandra Daigle',
@@ -764,7 +900,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-4691367',
       'email': 'fetefranco@fetefrancoalbertaine.ca',
-      'id': 68
+      'id': 68,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Lieu historique national de la Mine-de-Charbon-Atlas',
       'contact': 'Jessica Jeninga',
@@ -775,7 +913,9 @@ export class ServerService {
       'category': 'Tourisme',
       'phone': '403-822-2220',
       'email': 'programs@atlascoalmine.com',
-      'id': 69
+      'id': 69,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Alliance française de Calgary',
       'contact': 'Jean-Baptiste Roux',
@@ -786,7 +926,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '403-245-5662',
       'email': 'director@afcalgary.ca',
-      'id': 70
+      'id': 70,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ACFA provinciale',
       'contact': 'Hélène Guillemette',
@@ -797,7 +939,9 @@ export class ServerService {
       'category': 'Organisme',
       'phone': '780-466-1680',
       'email': 'h.guillemette@acfa.ab.ca',
-      'id': 71
+      'id': 71,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Banff Centre for Arts and Creativity',
       'contact': 'Marie-Hélène Dagenais',
@@ -808,7 +952,9 @@ export class ServerService {
       'category': 'Hotel',
       'phone': '403-431-0315',
       'email': 'MarieHelene_Dagenais@banffcentre.ca',
-      'id': 72
+      'id': 72,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Municipalité de Legal',
       'contact': 'Anna Keane',
@@ -819,7 +965,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '780-961-3773',
       'email': 'akeane@legal.ca',
-      'id': 73
+      'id': 73,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Ville de Beaumont',
       'contact': 'Robert Mackin',
@@ -830,7 +978,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '',
       'email': 'rob.mackin@beaumont.ab.ca',
-      'id': 74
+      'id': 74,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ABC Country Restaurant',
       'contact': 'Charles Leclerc',
@@ -841,7 +991,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '403-358-4280',
       'email': 'abccountry@telus.net',
-      'id': 75
+      'id': 75,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Les Conseil scolaires du sud - CSSA/CSCFSA Franco sud',
       'contact': 'Brigitte St-Hilaire',
@@ -852,7 +1004,9 @@ export class ServerService {
       'category': 'Education',
       'phone': '403-686-6998',
       'email': 'brigitte.sthilaire@francosud.ca',
-      'id': 76
+      'id': 76,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'La Société des Manoirs Saint-Joachim et Saint-Thomas',
       'contact': 'Roch Labelle',
@@ -863,7 +1017,9 @@ export class ServerService {
       'category': 'Hotel',
       'phone': '780-9453274',
       'email': 'info@msjst.ca',
-      'id': 77
+      'id': 77,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Sylvain Lacroix, Investisseur Immobilier Professionel',
       'contact': 'Sylvain Lacroix',
@@ -874,7 +1030,9 @@ export class ServerService {
       'category': 'Immobilier',
       'phone': '403-305-0973',
       'email': 'Sylvain_911@hotmail.com',
-      'id': 78
+      'id': 78,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Cinthia Mazur',
       'contact': 'Cinthia Mazur',
@@ -885,7 +1043,9 @@ export class ServerService {
       'category': 'Traduction',
       'phone': '',
       'email': 'cinthia.mazur@telusplanet.net',
-      'id': 79
+      'id': 79,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Le Franco',
       'contact': 'Hélène Lequitte',
@@ -896,7 +1056,9 @@ export class ServerService {
       'category': 'Média',
       'phone': '780-465-6581',
       'email': 'direction@lefranco.ab.ca',
-      'id': 80
+      'id': 80,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'BASE 2A INTERNATIONALE INC.',
       'contact': 'KOUAKOU JEAN-MARIE KONAN',
@@ -907,7 +1069,9 @@ export class ServerService {
       'category': 'Services',
       'phone': '438-868-5222',
       'email': 'jeanmariekonan@hotmail.com',
-      'id': 81
+      'id': 81,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Canadian Moving Services',
       'contact': 'francine drapeau',
@@ -918,7 +1082,9 @@ export class ServerService {
       'category': 'Démenagement',
       'phone': '780-232-0275',
       'email': 'francine@canadianmovingservices.com',
-      'id': 82
+      'id': 82,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Heavy Equipment Training Canada',
       'contact': 'Stéphane Leclerc',
@@ -929,7 +1095,9 @@ export class ServerService {
       'category': 'Construction',
       'phone': '587-337-2230',
       'email': 'info@shetc.ca',
-      'id': 83
+      'id': 83,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'The City of Red Deer',
       'contact': 'Michael Regis',
@@ -940,7 +1108,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '403-342-8152',
       'email': 'michael.regis@reddeer.ca',
-      'id': 84
+      'id': 84,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'AG Graphic Design & Marketing',
       'contact': 'Anne Giguère',
@@ -951,7 +1121,9 @@ export class ServerService {
       'category': 'Graphisme',
       'phone': '',
       'email': 'ag.graphicdesign@outlook.com',
-      'id': 85
+      'id': 85,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Sikati Enterprises ltd',
       'contact': 'Clément Fogue',
@@ -962,7 +1134,9 @@ export class ServerService {
       'category': 'Transport',
       'phone': '',
       'email': 'sikatient@gmail.com',
-      'id': 86
+      'id': 86,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'L2L Consulting LTD',
       'contact': 'Joël F. Lavoie',
@@ -973,7 +1147,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '',
       'email': 'j.lavoie@telus.net',
-      'id': 87
+      'id': 87,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Kavita Brow Artist Inc',
       'contact': 'Kavita Rangasamy',
@@ -984,7 +1160,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '',
       'email': 'rangasamykavita@gmail.com',
-      'id': 88
+      'id': 88,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Mario Glass',
       'contact': 'Mario Raymond',
@@ -995,7 +1173,9 @@ export class ServerService {
       'category': 'Construction',
       'phone': '780-220-4263',
       'email': 'mario@marioglass.ca',
-      'id': 89
+      'id': 89,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'GHB Ventures',
       'contact': 'Guillaume Bédard',
@@ -1006,7 +1186,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '',
       'email': 'Guillaume@ghbventures.com',
-      'id': 90
+      'id': 90,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Sunco Communication',
       'contact': 'Cédrick Leblanc',
@@ -1017,7 +1199,9 @@ export class ServerService {
       'category': 'Communication',
       'phone': '',
       'email': 'cedrick@sunco.ca',
-      'id': 91
+      'id': 91,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'The Laughing hour',
       'contact': 'Maude Bombardier',
@@ -1028,7 +1212,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '',
       'email': 'maudebombardier@gmil.com',
-      'id': 92
+      'id': 92,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Alberta\'s Lakeland DMO',
       'contact': 'Marianne Janke',
@@ -1039,7 +1225,9 @@ export class ServerService {
       'category': 'Tourisme',
       'phone': '',
       'email': '',
-      'id': 93
+      'id': 93,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'ÉcoSynergy',
       'contact': 'Amélie Caron',
@@ -1050,7 +1238,9 @@ export class ServerService {
       'category': 'Construction',
       'phone': '',
       'email': 'acaron@ecosynergy.ca',
-      'id': 94
+      'id': 94,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Graphic Design MP',
       'contact': 'Mylène Poulin',
@@ -1061,7 +1251,9 @@ export class ServerService {
       'category': 'Graphisme',
       'phone': '',
       'email': 'graphicdesignmp@hotmail.com',
-      'id': 95
+      'id': 95,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'A5 Energy Consulting Inc.',
       'contact': 'Patricia Auger-Lachance',
@@ -1072,7 +1264,9 @@ export class ServerService {
       'category': 'Conseil',
       'phone': '',
       'email': '',
-      'id': 96
+      'id': 96,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Creative Element',
       'contact': 'Aurélien Jondeau',
@@ -1083,7 +1277,9 @@ export class ServerService {
       'category': 'Site internet',
       'phone': '',
       'email': 'aurelien@creative-elements.ca',
-      'id': 97
+      'id': 97,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'BITS Traduction',
       'contact': 'Alain Bertrand',
@@ -1094,7 +1290,9 @@ export class ServerService {
       'category': 'Traduction',
       'phone': '780-953-9040',
       'email': 'abits@shW.ca',
-      'id': 98
+      'id': 98,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Clearcut Assurance',
       'contact': 'Mamadou ( Oury) Barry',
@@ -1105,7 +1303,9 @@ export class ServerService {
       'category': 'Assurance',
       'phone': '780-716-4197',
       'email': 'mamadou@clearcutinsurance.ca',
-      'id': 99
+      'id': 99,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Advisory Translation Services Inc.',
       'contact': 'Nicole Giguère',
@@ -1116,7 +1316,9 @@ export class ServerService {
       'category': 'Traduction',
       'phone': '403-246-6762',
       'email': 'atsinc@telus.net',
-      'id': 100
+      'id': 100,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Town of Morinville',
       'contact': 'BRAD WHITE',
@@ -1127,7 +1329,9 @@ export class ServerService {
       'category': 'Municipalité',
       'phone': '780-939-7622',
       'email': 'brad.white@morinville.ca',
-      'id': 101
+      'id': 101,
+      'lat': 0,
+      'lng': 0
     }, {
       'company': 'Lachance Maple Syrup',
       'contact': 'Daniel Lachance',
@@ -1138,7 +1342,9 @@ export class ServerService {
       'category': 'Restauration',
       'phone': '',
       'email': 'daniel.lachance@live.com',
-      'id': 102
+      'id': 102,
+      'lat': 0,
+      'lng': 0
     }
   ];
 
