@@ -11,7 +11,7 @@ export class ListPage implements OnInit {
   public items: Array<string> = [];
 
   constructor(private server: ServerService) {
-    this.server.getByCategory().forEach((companies, category) => {
+    this.server.getByCategory().forEach((_, category) => {
       this.items.push(category);
     });
     this.items.sort(function (a, b) { return a.localeCompare(b, "fr"); });;
