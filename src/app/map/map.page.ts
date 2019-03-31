@@ -242,15 +242,21 @@ export class MapPage implements OnInit {
 
   async dispMarkerData(id: number) {
     const company = this.server.companies[id];
+    let info = company.address + ', ' + company.city + ', ' + company.region + '<br>'
+                + company.phone + '<br>'
+                +company.email;
+    if (this.server.onSale(id)) {
+      info += this.server.getSale(id).description;
+    }
     if (this.server.onSale(id)) {
       return this.map.addMarker({
         'position': {
           'lat': company.lat,
           'lng': company.lng
         },
-        // 'icon': '../../assets/saleMarker.png',
         'icon': 'https://i.imgur.com/7wnV1Ap.png',
-        'title': company.company
+        'title': company.company,
+        'snippet': info,
       });
     }
     else {
@@ -259,11 +265,12 @@ export class MapPage implements OnInit {
           'lat': company.lat,
           'lng': company.lng
         },
-        // 'icon': '../../assets/saleMarker.png',
-        'title': company.company
+        'title': company.company,
+        'snippet': info,
       });
     }
   }
+
 
   async focusOnId(id: number) {
     const company = this.server.companies[id];
