@@ -244,7 +244,7 @@ export class MapPage implements OnInit {
     const company = this.server.companies[id];
     let info = company.address + ', ' + company.city + ', ' + company.region + '<br>'
                 + company.phone + '<br>'
-                +company.email;
+                +company.email + '<br>';
     if (this.server.onSale(id)) {
       info += this.server.getSale(id).description;
     }
