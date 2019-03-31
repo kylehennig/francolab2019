@@ -1360,6 +1360,7 @@ export class ServerService {
   ];
 
   private categoryCompanyMap = new Map();
+  private idSaleMap = new Map();
 
   constructor() {
     // Creates categoryCompanyMap.
@@ -1369,6 +1370,10 @@ export class ServerService {
     this.companies.forEach(company => {
       this.categoryCompanyMap.get(company.category).push(company.id);
     });
+    // Creates idSaleMap.
+    this.sales.forEach(sale => {
+      this.idSaleMap.set(sale.id, sale);
+    });
   }
 
   /**
@@ -1377,6 +1382,14 @@ export class ServerService {
    */
   getCompany(id: number) {
     return this.companies[id];
+  }
+
+  /**
+  * Gets a sale by id.
+  * @param id The id.
+  */
+  getSale(id: number) {
+    return this.idSaleMap.get(id);
   }
 
   /**
