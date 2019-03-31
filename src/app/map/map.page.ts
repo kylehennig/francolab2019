@@ -12,6 +12,7 @@ import {
   GoogleMapsAnimation,
   MyLocation
 } from '@ionic-native/google-maps';
+import { ServerService } from '../server.service';
 
 @Component({
   selector: 'app-map',
@@ -22,11 +23,13 @@ export class MapPage implements OnInit {
 
   map: GoogleMap;
   loading: any;
+  queryText = '';
 
   constructor(
     public loadingCtrl: LoadingController,
     public toastCtrl: ToastController,
-    private platform: Platform) { }
+    private platform: Platform,
+    private server: ServerService) { }
 
   async ngOnInit() {
     // Since ngOnInit() is executed before `deviceready` event,
@@ -128,5 +131,9 @@ export class MapPage implements OnInit {
     });
 
     toast.present();
+  }
+
+  async onSearch() {
+    // TODO.
   }
 }
