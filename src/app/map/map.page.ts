@@ -112,24 +112,22 @@ export class MapPage implements OnInit {
     });
   }
 
+  // async blueDot() {
+  //   // Get the location of you
+  //   this.map.getMyLocation().then((location: MyLocation) => {
+  //     this.loading.dismiss();
 
-//   async blueDot() {
-// // Get the location of you
-//     this.map.getMyLocation().then((location: MyLocation) => {
-//       this.loading.dismiss();
-
-//       // add a marker
-//       const marker: Marker = this.map.addMarkerSync({
-//         position: location.latLng,
-//         // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-//         icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
-//       });
-//     })
-//     .catch(err => {
-//     this.loading.dismiss();
-//     });
-//   }
-
+  //     // add a marker
+  //     const marker: Marker = this.map.addMarkerSync({
+  //       position: location.latLng,
+  //       // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+  //       icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
+  //     });
+  //   })
+  //     .catch(err => {
+  //       this.loading.dismiss();
+  //     });
+  // }
 
   async dispAllMark() {
     this.loading = await this.loadingCtrl.create({
@@ -140,11 +138,7 @@ export class MapPage implements OnInit {
     for (let i = 0; i < this.server.companies.length; i++) {
       this.dispMarkerData(i);
     }
-
-
   }
-
-
 
   async onButtonClick() {
     this.map.clear();
@@ -188,7 +182,6 @@ export class MapPage implements OnInit {
     // });
   }
 
-
   async showToast(message: string) {
     const toast = await this.toastCtrl.create({
       message: message,
@@ -226,21 +219,18 @@ export class MapPage implements OnInit {
     this.searchResults = matches;
   }
 
-
   async dispMarkerApi(id: number) {
-    let company = this.server.companies[id];
-    let options: GeocoderRequest = {
+    const company = this.server.companies[id];
+    const options: GeocoderRequest = {
       address: company.address + " " + company.city + " " + company.region
     };
     Geocoder.geocode(options).then((results: GeocoderResult[]) => {
-      console.log(results);
       return this.map.addMarker({
         'position': results[0].position,
         'title': company.company
       });
     });
   }
-
 
   async selectResult(id: number) {
     this.searching = false;
@@ -249,28 +239,27 @@ export class MapPage implements OnInit {
     this.focusOnId(id);
   }
 
-
   async dispMarkerData(id: number) {
-    let company = this.server.companies[id];
+    const company = this.server.companies[id];
     return this.map.addMarker({
       'position': {
-        "lat": company.lat,
-        "lng": company.lng
+        'lat': company.lat,
+        'lng': company.lng
       },
       'title': company.company
-    })
+    });
   }
 
-
-    async focusOnId(id: number) {
-      let company = this.server.companies[id];
-      this.map.animateCamera({
-        target: {"lat": company.lat,
-                "lng": company.lng},
-        zoom: 12,
-      });
+  async focusOnId(id: number) {
+    const company = this.server.companies[id];
+    this.map.animateCamera({
+      target: {
+        'lat': company.lat,
+        'lng': company.lng
+      },
+      zoom: 12,
+    });
   }
-
 
   async getCurrentLocation(): Promise<LatLng> {
     return this.map.getMyLocation().then(location => location.latLng);
