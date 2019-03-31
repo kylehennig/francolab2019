@@ -139,7 +139,7 @@ export class ServerService {
     }, {
       'company': 'Vertical Oxygen',
       'contact': 'Nathalie Callede',
-      'address': '4627 Namaka Crescent, NW',
+      'address': '4627 Namaka Crescent NW',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2K 2H5',
@@ -152,7 +152,7 @@ export class ServerService {
     }, {
       'company': 'AJEFA',
       'contact': 'Denise Lavallée',
-      'address': '8627 91 Street, NW, Suite 314',
+      'address': '8627 91 Street NW, Suite 314',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 3N1',
@@ -165,7 +165,7 @@ export class ServerService {
     }, {
       'company': 'GITASA Concrete Ltd.',
       'contact': 'Emmanuel Nyandwi',
-      'address': 'Sandin Crescent, NW',
+      'address': 'Sandin Crescent NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6R 0E9',
@@ -191,7 +191,7 @@ export class ServerService {
     }, {
       'company': 'dRN Law LLP',
       'contact': 'Andréa de Rocquigny',
-      'address': '144 4e Avenue SW, Suite 1600,',
+      'address': '144 4e Avenue SW, Suite 1600',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2P 3W4',
@@ -295,7 +295,7 @@ export class ServerService {
     }, {
       'company': 'Francois Le Roi Fine Chocolatier Paris',
       'contact': 'Francois Le Roi',
-      'address': '8116 Gateway Boulevard, NW',
+      'address': '8116 Gateway Boulevard NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6E 4B1',
@@ -347,7 +347,7 @@ export class ServerService {
     }, {
       'company': 'DD Kandolo  et Associates',
       'contact': 'Dieudonné Kandolo',
-      'address': '2e étage,10510- 107 Avenue',
+      'address': '2e étage,10510-107 Avenue',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5H 0W2',
@@ -425,7 +425,7 @@ export class ServerService {
     }, {
       'company': 'Marcus Translations',
       'contact': 'Marcus Zeidan',
-      'address': '9813 104 Street, NW',
+      'address': '9813 104 Street NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5K 0Y8',
@@ -464,7 +464,7 @@ export class ServerService {
     }, {
       'company': 'Commun\'e-Action',
       'contact': 'Isabelle Déchène-Guay',
-      'address': '5612 84 Avenue, NW',
+      'address': '5612 84 Avenue NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6B 0H4',
@@ -477,7 +477,7 @@ export class ServerService {
     }, {
       'company': 'DRONEBUZZ',
       'contact': 'Martin Vendrame',
-      'address': '2803 James Mowatt Trail, SW',
+      'address': '2803 James Mowatt Trail SW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6W 2P5',
@@ -490,7 +490,7 @@ export class ServerService {
     }, {
       'company': 'Creative Coco Nuts Inc',
       'contact': 'Julie Picard',
-      'address': '8661 92 Avenue, NW',
+      'address': '8661 92 Avenue NW',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T6C 1S2',
@@ -880,7 +880,7 @@ export class ServerService {
     }, {
       'company': 'Région de Smoky River',
       'contact': 'Diane Chiasson',
-      'address': '701 Main Street, SW',
+      'address': '701 Main Street SW',
       'city': 'Falher',
       'region': 'Alberta',
       'postal': 'T0H 1M0',
@@ -919,7 +919,7 @@ export class ServerService {
     }, {
       'company': 'Alliance Française de Calgary',
       'contact': 'Jean-Baptiste Roux',
-      'address': '1721 29 Avenue, SW',
+      'address': '1721 29 Avenue SW',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2T 6T7',
@@ -1061,7 +1061,7 @@ export class ServerService {
       'lng': -113.466961
     }, {
       'company': 'BASE 2A INTERNATIONALE INC.',
-      'contact': 'KOUAKOU JEAN-MARIE KONAN',
+      'contact': 'Kouakou Jean-Marie Konan',
       'address': '9240 213 Street NW, #206',
       'city': 'Edmonton',
       'region': 'Alberta',
@@ -1114,7 +1114,7 @@ export class ServerService {
     }, {
       'company': 'AG Graphic Design & Marketing',
       'contact': 'Anne Giguère',
-      'address': '8 Bermondsey Rise NW,',
+      'address': '8 Bermondsey Rise NW',
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T3K 1T9',
@@ -1153,7 +1153,7 @@ export class ServerService {
     }, {
       'company': 'Kavita Brow Artist Inc',
       'contact': 'Kavita Rangasamy',
-      'address': '15630 87 Avenue,',
+      'address': '15630 87 Avenue',
       'city': 'Edmonton',
       'region': 'Alberta',
       'postal': 'T5R 5W9',
@@ -1257,7 +1257,7 @@ export class ServerService {
     }, {
       'company': 'A5 Energy Consulting Inc.',
       'contact': 'Patricia Auger-Lachance',
-      'address': '1017 Township Rd 540,',
+      'address': '1017 Township Rd 540',
       'city': 'Alberta Beach',
       'region': 'Alberta',
       'postal': 'T7Z 0A6',
