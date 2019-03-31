@@ -248,9 +248,8 @@ export class MapPage implements OnInit {
     let info = '';
     if (this.server.onSale(id)) {
       info += this.server.getSale(id).description;
-    }
-    else {
-      info += company.address + ', ' + company.city + ', ' + company.region;
+    } else {
+      info += this.fullAddress(id);
     }
     if (this.server.onSale(id)) {
       return this.map.addMarker({
@@ -285,5 +284,13 @@ export class MapPage implements OnInit {
     });
   }
 
-
+  fullAddress(id: number): string {
+    const company = this.server.getCompany(id);
+    let fullAddress = '';
+    if (company.address !== '') {
+      fullAddress += company.address + ', ';
+    }
+    fullAddress += company.city + ', ' + company.region;
+    return fullAddress;
+  }
 }
