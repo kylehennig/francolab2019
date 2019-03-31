@@ -1347,21 +1347,37 @@ export class ServerService {
       'lng': -113.490927
     }
   ];
+  private idCompanyMap = new Map();
+  private categoryCompanyMap = new Map();
 
-  constructor() { }
+  constructor() {
+    // Creates idCompanyMap.
+    this.companies.forEach(company => {
+      this.idCompanyMap.set(company.id, company);
+    });
+
+    // Creates categoryCompanyMap.
+    this.companies.forEach(company => {
+      this.categoryCompanyMap.set(company.category, []);
+    });
+    this.companies.forEach(company => {
+      this.categoryCompanyMap.get(company.category).push(company.id);
+    });
+  }
 
   /**
-   * Creates a map of categories to a list of company ids in that category.
+   * Gets a company by id.
+   * @param id The id.
+   */
+  getCompany(id: number) {
+    return this.idCompanyMap.get(id);
+  }
+
+  /**
+   * Gets a map from the categories to a list of company ids in that category.
    * @returns The map.
    */
   getByCategory(): Map<string, number[]> {
-    const map = new Map();
-    for (const company of this.companies) {
-      map.set(company.category, []);
-    }
-    for (const company of this.companies) {
-      map.get(company.category).push(company.id);
-    }
-    return map;
+    return this.categoryCompanyMap;
   }
 }

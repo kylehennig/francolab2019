@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-list [hidden]="searchResults.length === 0">
+  <ion-list [hidden]="!searching">
     <ion-item *ngFor="let result of searchResults">
-      <ion-label>{{result}}</ion-label>
+      <ion-label (click)="selectResult(result.id)">{{result.company}}</ion-label>
     </ion-item>
   </ion-list>
-  <div id="map_canvas" [hidden]="searchResults.length > 0"></div>
-  <ion-button ion-button (click)="onButtonClick()" [hidden]="searchResults.length > 0">Demo</ion-button>
+  <div id="map_canvas" [hidden]="searching"></div>
+  <ion-button ion-button (click)="onButtonClick()" [hidden]="searching">Demo</ion-button>
 </ion-content>
