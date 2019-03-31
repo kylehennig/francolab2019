@@ -37,7 +37,8 @@ export class AppComponent {
         'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyDdiznDtcGu8LGMu7Y6DJIrLLmbyigKxIU',
         'API_KEY_FOR_BROWSER_DEBUG': 'AIzaSyDdiznDtcGu8LGMu7Y6DJIrLLmbyigKxIU'
       });
-      this.statusBar.styleDefault();
+      this.statusBar.overlaysWebView(false);
+      this.statusBar.backgroundColorByHexString('#00a3da');
       this.splashScreen.hide();
     });
   }
