@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Company } from './company';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServerService {
-  companies = [
+  companies: Company[] = [
     {
       'company': 'Choquet Insurance Group Ltd.',
       'contact': 'Gilles Choquet',
