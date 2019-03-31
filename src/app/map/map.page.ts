@@ -111,22 +111,24 @@ export class MapPage implements OnInit {
     });
   }
 
-  // async blueDot() {
-  //   // Get the location of you
-  //   this.map.getMyLocation().then((location: MyLocation) => {
-  //     this.loading.dismiss();
+  async blueDot() {
+    // Get the location of you
+    this.map.getMyLocation().then((location: MyLocation) => {
+      this.loading.dismiss();
 
-  //     // add a marker
-  //     const marker: Marker = this.map.addMarkerSync({
-  //       position: location.latLng,
-  //       // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-  //       icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
-  //     });
-  //   })
-  //     .catch(err => {
-  //       this.loading.dismiss();
-  //     });
-  // }
+      // add a marker
+      const marker: Marker = this.map.addMarkerSync({
+        position: location.latLng,
+        // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+        // icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
+        'icon': '../../assets/saleMarker.png',
+
+      });
+    })
+      .catch(err => {
+        this.loading.dismiss();
+      });
+  }
 
   async dispAllMark() {
     this.loading = await this.loadingCtrl.create({
@@ -177,6 +179,7 @@ export class MapPage implements OnInit {
     // })
     // .catch(err => {
     this.loading.dismiss();
+    this.blueDot();
     //   this.showToast(err.error_message);
     // });
   }
