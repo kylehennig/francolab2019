@@ -248,7 +248,8 @@ export class MapPage implements OnInit {
           'lat': company.lat,
           'lng': company.lng
         },
-        'icon': '../../assets/saleMarker.png',
+        // 'icon': '../../assets/saleMarker.png',
+        'icon': 'https://i.imgur.com/7wnV1Ap.png',
         'title': company.company
       });
     }
