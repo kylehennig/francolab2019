@@ -50,7 +50,6 @@ export class MapPage implements OnInit {
     await this.platform.ready();
     await this.loadMap();
     await this.dispAllMark();
-    await this.blueDot();
   }
 
 
@@ -60,15 +59,19 @@ async loadMap() {
         target: {
           lat: 53.5444,
           lng: -113.4909
+
         },
-        zoom: 11,
-        tilt: 30
+        zoom: 15,
+        // tilt: 30
       },
       controls : {
         compass: true,
         myLocation: true,
         myLocationButton: true,
         mapToolbar: true
+      },
+      gestures: {
+        tilt: false
       },
       styles: [
         {
@@ -103,22 +106,22 @@ async loadMap() {
   }
 
 
-  async blueDot() {
-// Get the location of you
-    this.map.getMyLocation().then((location: MyLocation) => {
-      this.loading.dismiss();
+//   async blueDot() {
+// // Get the location of you
+//     this.map.getMyLocation().then((location: MyLocation) => {
+//       this.loading.dismiss();
 
-      // add a marker
-      const marker: Marker = this.map.addMarkerSync({
-        position: location.latLng,
-        // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-        icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
-      });
-    })
-    .catch(err => {
-    this.loading.dismiss();
-    });
-  }
+//       // add a marker
+//       const marker: Marker = this.map.addMarkerSync({
+//         position: location.latLng,
+//         // icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+//         icon: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
+//       });
+//     })
+//     .catch(err => {
+//     this.loading.dismiss();
+//     });
+//   }
 
 
   async dispAllMark() {
@@ -174,7 +177,6 @@ async loadMap() {
     // })
     // .catch(err => {
     this.loading.dismiss();
-    this.blueDot();
     //   this.showToast(err.error_message);
     // });
   }
@@ -237,6 +239,7 @@ async loadMap() {
     this.searching = false;
     this.searchText = this.server.getCompany(id).company;
     this.dispMarkerData(id);
+    this.focusOnId(id);
   }
 
 
@@ -252,17 +255,19 @@ async loadMap() {
   }
 
 
-
     async focusOnId(id: number) {
       let company = this.server.companies[id];
       this.map.animateCamera({
         target: {"lat": company.lat,
                 "lng": company.lng},
-        zoom: 17,
-        tilt: 30
+        zoom: 12,
       });
   }
 
+
+  async getCurrentLocation(): Promise<LatLng> {
+    return this.map.getMyLocation().then(location => location.latLng);
+  }
 }
 
 
