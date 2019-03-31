@@ -8,35 +8,15 @@ import { ServerService } from '../server.service';
 })
 export class ListPage implements OnInit {
   private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
+  public items: Array<string> = [];
 
   constructor(private server: ServerService) {
     this.server.getByCategory().forEach((companies, category) => {
-      this.items.push({
-        title: category,
-        note: '',
-        icon: ''
-        // this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
+      this.items.push(category);
     });
+    this.items.sort();
   }
 
   ngOnInit() {
   }
-  // add back when alpha.4 is out
-  // navigate(item) {
-  //   this.router.navigate(['/list', JSON.stringify(item)]);
-  // }
 }

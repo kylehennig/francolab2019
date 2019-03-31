@@ -16,6 +16,7 @@ import {
   GeocoderResult
 } from '@ionic-native/google-maps';
 import { ServerService } from '../server.service';
+import { Company } from '../company';
 
 
 const MAX_MATCHES = 10;
@@ -29,8 +30,9 @@ export class MapPage implements OnInit {
   map: GoogleMap;
   geocoder: Geocoder;
   loading: any;
+  searching = false;
   searchText = '';
-  searchResults: string[] = [];
+  searchResults: Company[] = [];
 
   constructor(
     public loadingCtrl: LoadingController,
@@ -153,21 +155,29 @@ async loadMap() {
   async onSearch() {
     if (this.searchText === '') {
       // No search gives no results.
-      this.searchResults = [];
+      this.searching = false;
       return;
     }
 
     // Finds the matching companies.
-    const matches: string[] = [];
+    const matches: Company[] = [];
     const searchLower = this.searchText.toLowerCase();
     for (const company of this.server.companies) {
       if (company.company.toLowerCase().startsWith(searchLower)) {
-        matches.push(company.company);
+        matches.push(company);
         if (matches.length >= MAX_MATCHES) {
           break;
         }
       }
     }
+
+    if (matches.length < 2) {
+      // An exact match should not suggest results.
+      this.searching = false;
+      return;
+    }
+
+    this.searching = true;
     this.searchResults = matches;
   }
 
@@ -179,16 +189,20 @@ async loadMap() {
       address: company.address + " " + company.city + " " + company.region
     };
 
-    // console.log(this.geocoder.geocode(options));
+
     Geocoder.geocode(options).then((results: GeocoderResult[]) => {
       console.log(results);
       return this.map.addMarker({
         'position': results[0].position,
         'title':  company.company
-      })
-    })
-    await console.log("test2");
+      });
+    });
+  }
 
+  async selectResult(id: number) {
+    this.searching = false;
+    this.searchText = this.server.getCompany(id).company;
+    this.dispMarker(id);
   }
 
     async dispMarkerData(id: number) {

@@ -585,7 +585,7 @@ export class ServerService {
       'city': 'ST-Isidore',
       'region': 'Alberta',
       'postal': 'T0H 3B0',
-      'category': 'Education',
+      'category': 'Éducation',
       'phone': '780-624-8855',
       'email': 'fcsfa@rogers.com',
       'id': 44,
@@ -1001,7 +1001,7 @@ export class ServerService {
       'city': 'Calgary',
       'region': 'Alberta',
       'postal': 'T2H 0W3',
-      'category': 'Education',
+      'category': 'Éducation',
       'phone': '403-686-6998',
       'email': 'brigitte.sthilaire@francosud.ca',
       'id': 76,
@@ -1347,21 +1347,31 @@ export class ServerService {
       'lng': -113.490927
     }
   ];
+  private categoryCompanyMap = new Map();
 
-  constructor() { }
+  constructor() {
+    // Creates categoryCompanyMap.
+    this.companies.forEach(company => {
+      this.categoryCompanyMap.set(company.category, []);
+    });
+    this.companies.forEach(company => {
+      this.categoryCompanyMap.get(company.category).push(company.id);
+    });
+  }
 
   /**
-   * Creates a map of categories to a list of company ids in that category.
+   * Gets a company by id.
+   * @param id The id.
+   */
+  getCompany(id: number) {
+    return this.companies[id];
+  }
+
+  /**
+   * Gets a map from the categories to a list of company ids in that category.
    * @returns The map.
    */
   getByCategory(): Map<string, number[]> {
-    const map = new Map();
-    for (const company of this.companies) {
-      map.set(company.category, []);
-    }
-    for (const company of this.companies) {
-      map.get(company.category).push(company.id);
-    }
-    return map;
+    return this.categoryCompanyMap;
   }
 }
