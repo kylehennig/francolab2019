@@ -35,7 +35,7 @@ export class CategoriesItemPage implements OnInit {
     return fullAddress;
   }
 
-  digitsOnly(input: string) {
+  digitsOnly(input: string): string {
     const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     let output = '';
     for (const char of input) {
