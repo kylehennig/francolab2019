@@ -37,7 +37,10 @@ export class MapPage implements OnInit {
   searching = false;
   searchText = '';
   searchResults: Company[] = [];
+<<<<<<< Updated upstream
   // bearMarker: Marker;
+=======
+>>>>>>> Stashed changes
 
   constructor(
     public loadingCtrl: LoadingController,
