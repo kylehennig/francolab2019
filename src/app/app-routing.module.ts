@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'map',
     loadChildren: './map/map.module#MapPageModule'
   },
+  {
+    path: 'map/:id',
+    loadChildren: './map/map.module#MapPageModule'
+  },
 ];
 
 @NgModule({

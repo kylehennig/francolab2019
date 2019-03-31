@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import {
   ToastController,
   Platform,
@@ -39,6 +40,7 @@ export class MapPage implements OnInit {
   searchResults: Company[] = [];
 
   constructor(
+    private activatedRoute: ActivatedRoute,
     public loadingCtrl: LoadingController,
     public toastCtrl: ToastController,
     private platform: Platform,
@@ -50,10 +52,15 @@ export class MapPage implements OnInit {
     await this.platform.ready();
     await this.loadMap();
     await this.dispAllMark();
+    const id = parseInt(this.activatedRoute.snapshot.paramMap.get('id'), 10);
+    console.log(id);
+    if (id !== NaN) {
+      this.focusOnId(id);
+    }
   }
 
 
-async loadMap() {
+  async loadMap() {
     this.map = GoogleMaps.create('map_canvas', {
       camera: {
         target: {
@@ -64,7 +71,7 @@ async loadMap() {
         zoom: 15,
         // tilt: 30
       },
-      controls : {
+      controls: {
         compass: true,
         myLocation: true,
         myLocationButton: true,
@@ -173,7 +180,7 @@ async loadMap() {
     //   // If clicked it, display the alert
     //   marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
     //     this.showToast('clicked!');
-    //   });
+    //   });wait this.dispAllMark();
     // })
     // .catch(err => {
     this.loading.dismiss();
@@ -229,7 +236,7 @@ async loadMap() {
       console.log(results);
       return this.map.addMarker({
         'position': results[0].position,
-        'title':  company.company
+        'title': company.company
       });
     });
   }
@@ -243,15 +250,15 @@ async loadMap() {
   }
 
 
-    async dispMarkerData(id: number) {
+  async dispMarkerData(id: number) {
     let company = this.server.companies[id];
     return this.map.addMarker({
-        'position': {
-          "lat" : company.lat,
-          "lng" : company.lng
-        },
-        'title':  company.company
-      })
+      'position': {
+        "lat": company.lat,
+        "lng": company.lng
+      },
+      'title': company.company
+    })
   }
 
 
